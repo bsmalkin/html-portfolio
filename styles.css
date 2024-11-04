@@ -1,133 +1,59 @@
 html { 
-    background: #36454F
+  background: #36454F;
 }
 
-/* Start CSS for the Navigation Bar */
+/* Navigation Bar */
 .nav-list {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #1b1b1b;
-    padding: 10px;
-    margin: 0;
-    display: flex;
-    justify-content:center;
-    list-style-type: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #1b1b1b;
+  padding: 10px 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
 }
 
 .nav-list li {
-    margin: 0;
+  margin: 0;
 }
 
 .nav-list li a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    padding: 14px 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    display: block;
+  color: #FFF;
+  text-decoration: none;
+  padding: 14px 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav-list li a:hover {
-    background-color: #555;
+  background-color: #555;
 }
-/* End CSS for the Navigation Bar */
 
-
+/* Base Styling */
 body {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:#fff;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-}
-
-/* 3D Styling for the name */
-#name {
-    font-size: 4rem; /* Larger font for emphasis */
-    color: #39FF14; /* Bright yellow to pop on grey */
-    font-weight: bold;
-    text-shadow: 
-        2px 2px 0 #050505, /* Lighter grey for shadow depth */
-        4px 4px 0 #837f7f, /* Medium grey for middle layer */
-        6px 6px 0 #030303; /* Dark grey for bottom layer */
-}
-
-#tagline {
-    font-size: 1.5rem;
-    color: #f1f1f1;
-    margin-top: 10px;
-    font-style: italic;
-    opacity: 0.9; /* Slight transparency for effect */
-}
-
-/* Container for the About Me sections */
-.about-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Styling for each section */
-section {
-    width: 100%;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  section:last-child {
-    border-bottom: none;
-  }
-  
-h2 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-    color: #39FF14
-  }
-  
-p, ul {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-  
-  /* Skills Grid */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  display: flex;
-  gap: 1rem;
-  padding-top: 1rem;
-}
-
-.skill-item {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #FFF;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
-.skill-icon {
-  width: 75px;
-  height: 75px;
-  object-fit: contain; 
+h2 {
+  font-size: 2rem;
+  color: #39FF14;
   margin-bottom: 0.5rem;
 }
 
-.skill-item span {
-  font-size: 0.9rem;
-  color: #ffffff;
+p, ul {
+  font-size: 1rem;
+  line-height: 1.5;
 }
-  
-/* Add a little styling for the GitHub link */
+
 a {
   color: #0073e6;
   text-decoration: none;
@@ -137,31 +63,204 @@ a:hover {
   text-decoration: underline;
 }
 
-.asu-image {
-  display: block;
-  margin: 0 auto; /* Centers the image horizontally */
-  width: 200px; /* Adjust size as needed */
-  height: 200px; /* Keep square for circular styling */
-  object-fit: contain; /* Ensures image maintains aspect ratio within the circle */
-  margin-bottom: 1rem; /* Space between image and text */
-  justify-content: center;
+/* Name Styling */
+#name {
+  font-size: 4rem;
+  color: #39FF14;
+  font-weight: bold;
+  text-shadow: 
+      2px 2px 0 #050505, 
+      4px 4px 0 #837f7f, 
+      6px 6px 0 #030303;
 }
 
-header {
-    text-align: center;
-    color: #fff;
+#tagline {
+  font-size: 1.5rem;
+  color: #f1f1f1;
+  margin-top: 10px;
+  font-style: italic;
+  opacity: 0.9;
 }
 
-main {
-    padding: 20px;
-    text-align: center;
+/* Container Styling */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+section {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Responsive column layout */
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: #2b2b2b; /* Dark background */
+  border-radius: 12px; /* Rounded edges */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+  cursor: pointer; /* Pointer cursor to indicate interactivity */
+}
+
+.skill-item:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 8px 16px rgba(0, 255, 70, 0.4); /* Brighter shadow effect on hover */
+  background-color: #333; /* Darker background on hover */
+}
+
+.skill-icon {
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+  transition: filter 0.3s ease; /* Smooth transition for icon color change */
+}
+
+.skill-icon:hover {
+  filter: brightness(1.3); /* Slightly brighten icon on hover */
+}
+
+.skill-item span {
+  font-size: 0.9rem;
+  color: #ffffff;
+  margin-top: 0.5rem;
+}
+
+skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Responsive column layout */
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+.certs-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: #2b2b2b; /* Dark background */
+  border-radius: 12px; /* Rounded edges */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+  cursor: pointer; /* Pointer cursor to indicate interactivity */
+}
+
+.certs-item:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 8px 16px rgba(0, 255, 70, 0.4); /* Brighter shadow effect on hover */
+  background-color: #333; /* Darker background on hover */
+}
+
+.certs-icon {
+  width: 200px;
+  height: 200px;
+  object-fit: fill;
+  margin-bottom: 0.5rem;
+  transition: filter 0.3s ease; /* Smooth transition for icon color change */
+}
+
+.certs-icon:hover {
+  filter: brightness(1.3); /* Slightly brighten icon on hover */
+}
+
+/* Timeline Styling */
+.timeline {
+  position: relative;
+  margin: 2rem 0;
+  padding: 1rem 0;
+  border-left: 2px solid #39FF14;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -7px;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #39FF14;
+  border-radius: 50%;
+}
+
+.timeline-date {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content {
+  padding: 1rem;
+  background: #2b2b2b;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-content h3 {
+  color: #39FF14;
+}
+
+.timeline-content ul {
+  margin-top: 0.5rem;
+  list-style: disc;
+  padding-left: 1rem;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 600px) {
+  .timeline {
+      border-left: none;
+  }
+  .timeline-item {
+      padding-left: 0;
+  }
+  .timeline-item::before {
+      left: 0;
+  }
+}
+
+/* Footer */
 footer {
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    width: 100%;
-    position: static;
-    bottom: 0;
+  color: #FFF;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Logo Images */
+.asu-image,
+.work-logo {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 1rem;
 }
