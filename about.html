@@ -9,9 +9,9 @@
 
 <div class = "nav-list">
     <li><a href="./index.html">Home</a></li>
-    <li><a href="#about">About Me</a></li>
-    <li><a href="#experience">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="./about.html">About Me</a></li>
+    <li><a href="./projects.html">Projects</a></li>
+    <li><a href="./contact.html">Contact</a></li>
 </div>
 
 <body>
@@ -23,7 +23,7 @@
         </section>
     
         <!-- Skills Section with Icon Grid -->
-        <section class="about-skills">
+        <div class="about-skills">
             <h2>Skills</h2>
             <h3>Langauges & Platforms</h3>
             <div class="skills-grid">
@@ -52,17 +52,39 @@
                 <span>React</span>
             </div>
             <div class="skill-item">
+                <img src="./images/icons/Logo_C_sharp.svg.png" alt="c-sharp" class="skill-icon">
+                <span>C#</span>
+            </div>
+            <div class="skill-item">
                 <img src="./images/icons/html.png" alt="HTML" class="skill-icon">
                 <span>HTML</span>
             </div>
             <div class="skill-item">
-                <img src="./images/icons//CSS3_logo_and_wordmark.svg.png" alt="CSS" class="skill-icon">
+                <img src="./images/icons/CSS3_logo.svg.png" alt="CSS" class="skill-icon">
                 <span>CSS</span>
-            </div>
-           
-            
+            </div>       
             <!-- Add more skill items as needed -->
             </div>
+            <h3>Development Environments</h3>
+            <div class="skills-grid">
+            <div class="skill-item">
+                <img src="./images/Red_Hat_logo.svg.png" alt="RHEL" class="skill-icon">
+                <span>RHEL</span>
+            </div>
+            <div class="skill-item">
+                <img src="./images/Ubuntu-logo-no-wordmark-solid-o-2022.svg.png" alt="ubuntu" class="skill-icon">
+                <span>Ubuntu</span>
+            </div>
+            <div class="skill-item">
+                <img src="./images//Windows_logo_-_2012_derivative.svg.png" alt="windows" class="skill-icon">
+                <span>Windows</span>
+            </div>
+            <div class="skill-item">
+                <img src="./images//AWS_Simple_Icons_AWS_Cloud.svg.png" alt="AWS" class="skill-icon">
+                <span>AWS</span>
+            </div>
+        </div>
+
         </section>
 
         <section class="about-experience">
@@ -122,14 +144,16 @@
 
         <!-- Education Section -->
         <section class="about-education">
-          <h2>Education</h2>
-          <img src="./images/Arizona_State_University_seal.svg.png" alt="ASU Logo" class="asu-image">
-          <div class="education-item">
-            <h3>Bachelor of Science in Computer Science & Cybersecurity</h3>
-            <p><strong>Arizona State University</strong>, 2018 - 2022</p>
-            <p><strong>Magna Cum Laude | GPA: 3.62</strong></p>
-
-          </div>
+            <h2>Education</h2>
+            <div class="education-card">
+                <img src="./images/ASU-logo.png" alt="ASU Logo" class="asu-image">
+                <div class="education-details">
+                    <h3>Bachelor of Science (B.S.)<br>Computer Science & Cybersecurity</h3>
+                    <p><strong>Arizona State University</strong></p>
+                    <p>2018 - 2022</p>
+                    <p>Magna Cum Laude | GPA: 3.62</p>
+                </div>
+            </div>
         </section>
     
         <!-- Certificates Section -->
@@ -137,12 +161,10 @@
           <h2>Certifications</h2>
           <!-- Skills Section with Icon Grid -->
             <div class="certs-grid">
-            <div class="certs-item">
-                <img src="./images/image.png" alt="Python" class=" skill-icon">
-            </div>
-           
-            
-            <!-- Add more skill items as needed -->
+                <div class="certs-item">
+                    <img src="./images/image.png" alt="Python" class="certs-icon">
+                </div>
+                <!-- Add more skill items as needed -->
             </div>
         </section>
       </div>
