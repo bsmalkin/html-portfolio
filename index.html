@@ -1,66 +1,890 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ben Malkin</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<div class = "nav-list">
-    <li><a href="./index.html">Home</a></li>
-    <li><a href="./about.html">About Me</a></li>
-    <li><a href="./projects.html">Projects</a></li>
-    <li><a href="./contact.html">Contact</a></li>
-</div>
-
-
-<body>
-    <!-- Particle Background Canvas -->
-    <canvas id="particleCanvas"></canvas>
-    <header>
-        <h1 id="name">Ben Malkin</h1>
-        
-        <h2 id="tagline">Software & Cybersecurity Engineer</h2>
-        <p></p>
-    </header>
-
-    <footer>
-        <p>&copy; 2024 Ben Malkin</p>
-    </footer>
-
-    <script src="particles.js"></script>
-</body>
-<style>
-    /* Basic Reset */
-    * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    }
-
-    body, html {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    font-family: Arial, sans-serif;
-    }
-
-    #particleCanvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1; /* Place canvas behind other content */
-    }
-
-    .content {
-    position: relative;
-    z-index: 1;
-    color: white;
-    text-align: center;
-    margin-top: 20%;
-    }
-</style>
+<html lang="en" class="dark" style="color-scheme: dark;">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="preload" href="./_next/static/media/2d141e1a38819612-s.p.woff2" as="font" crossorigin="" type="font/woff2">
+      <link rel="stylesheet" href="./_next/static/css/styles.css" crossorigin="" data-precedence="next">
+      <link rel="preload" as="script" fetchpriority="low" href="./_next/static/chunks/webpack-e084620823b38b0f.js" crossorigin="">
+      <script src="./_next/static/chunks/30b509c0-729d9546c21d9d23.js" async="" crossorigin=""></script>
+      <script src="./_next/static/chunks/184-4c54e06adf949888.js" async="" crossorigin=""></script>
+      <script src="./_next/static/chunks/main-app-ee5ea468b114ac39.js" async="" crossorigin=""></script>
+      <script src="./_next/static/chunks/540-d2bfbae1ad721a10.js" async=""></script>
+      <script src="./_next/static/chunks/685-b09341cde7e4eb19.js" async=""></script>
+      <title>Safet Pojskic</title>
+      <meta name="description" content="Welcome to my personal portfolio!">
+      <meta name="application-name" content="Safet Pojskic">
+      <meta name="keywords" content="Safet Pojskic,portfolio,personal,website,developer,designer,engineer,software,engineer">
+      <meta property="og:title" content="Safet Pojskic">
+      <meta property="og:description" content="Welcome to my personal portfolio!">
+      <meta property="og:site_name" content="Safet Pojskic">
+      <meta property="og:image" content="https://safetpojskic.com/opengraph-image.png">
+      <meta property="og:type" content="website">
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:site" content="@safetpojskic">
+      <meta name="twitter:title" content="Safet Pojskic">
+      <meta name="twitter:description" content="Welcome to my personal portfolio!">
+      <meta name="twitter:image" content="https://safetpojskic.com/opengraph-image.png">
+      <meta name="next-size-adjust">
+      <script src="./Safet Pojskic_files/polyfills-c67a75d1b6f99dc8.js.download" crossorigin="" nomodule=""></script>
+      <style type="text/css">html[dir=ltr],[data-sonner-toaster][dir=ltr]{--toast-icon-margin-start: -3px;--toast-icon-margin-end: 4px;--toast-svg-margin-start: -1px;--toast-svg-margin-end: 0px;--toast-button-margin-start: auto;--toast-button-margin-end: 0;--toast-close-button-start: 0;--toast-close-button-end: unset;--toast-close-button-transform: translate(-35%, -35%)}html[dir=rtl],[data-sonner-toaster][dir=rtl]{--toast-icon-margin-start: 4px;--toast-icon-margin-end: -3px;--toast-svg-margin-start: 0px;--toast-svg-margin-end: -1px;--toast-button-margin-start: 0;--toast-button-margin-end: auto;--toast-close-button-start: unset;--toast-close-button-end: 0;--toast-close-button-transform: translate(35%, -35%)}[data-sonner-toaster]{position:fixed;width:var(--width);font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;--gray1: hsl(0, 0%, 99%);--gray2: hsl(0, 0%, 97.3%);--gray3: hsl(0, 0%, 95.1%);--gray4: hsl(0, 0%, 93%);--gray5: hsl(0, 0%, 90.9%);--gray6: hsl(0, 0%, 88.7%);--gray7: hsl(0, 0%, 85.8%);--gray8: hsl(0, 0%, 78%);--gray9: hsl(0, 0%, 56.1%);--gray10: hsl(0, 0%, 52.3%);--gray11: hsl(0, 0%, 43.5%);--gray12: hsl(0, 0%, 9%);--border-radius: 8px;box-sizing:border-box;padding:0;margin:0;list-style:none;outline:none;z-index:999999999}[data-sonner-toaster][data-x-position=right]{right:max(var(--offset),env(safe-area-inset-right))}[data-sonner-toaster][data-x-position=left]{left:max(var(--offset),env(safe-area-inset-left))}[data-sonner-toaster][data-x-position=center]{left:50%;transform:translate(-50%)}[data-sonner-toaster][data-y-position=top]{top:max(var(--offset),env(safe-area-inset-top))}[data-sonner-toaster][data-y-position=bottom]{bottom:max(var(--offset),env(safe-area-inset-bottom))}[data-sonner-toast]{--y: translateY(100%);--lift-amount: calc(var(--lift) * var(--gap));z-index:var(--z-index);position:absolute;opacity:0;transform:var(--y);filter:blur(0);touch-action:none;transition:transform .4s,opacity .4s,height .4s,box-shadow .2s;box-sizing:border-box;outline:none;overflow-wrap:anywhere}[data-sonner-toast][data-styled=true]{padding:16px;background:var(--normal-bg);border:1px solid var(--normal-border);color:var(--normal-text);border-radius:var(--border-radius);box-shadow:0 4px 12px #0000001a;width:var(--width);font-size:13px;display:flex;align-items:center;gap:6px}[data-sonner-toast]:focus-visible{box-shadow:0 4px 12px #0000001a,0 0 0 2px #0003}[data-sonner-toast][data-y-position=top]{top:0;--y: translateY(-100%);--lift: 1;--lift-amount: calc(1 * var(--gap))}[data-sonner-toast][data-y-position=bottom]{bottom:0;--y: translateY(100%);--lift: -1;--lift-amount: calc(var(--lift) * var(--gap))}[data-sonner-toast] [data-description]{font-weight:400;line-height:1.4;color:inherit}[data-sonner-toast] [data-title]{font-weight:500;line-height:1.5;color:inherit}[data-sonner-toast] [data-icon]{display:flex;height:16px;width:16px;position:relative;justify-content:flex-start;align-items:center;flex-shrink:0;margin-left:var(--toast-icon-margin-start);margin-right:var(--toast-icon-margin-end)}[data-sonner-toast][data-promise=true] [data-icon]>svg{opacity:0;transform:scale(.8);transform-origin:center;animation:sonner-fade-in .3s ease forwards}[data-sonner-toast] [data-icon]>*{flex-shrink:0}[data-sonner-toast] [data-icon] svg{margin-left:var(--toast-svg-margin-start);margin-right:var(--toast-svg-margin-end)}[data-sonner-toast] [data-content]{display:flex;flex-direction:column;gap:2px}[data-sonner-toast] [data-button]{border-radius:4px;padding-left:8px;padding-right:8px;height:24px;font-size:12px;color:var(--normal-bg);background:var(--normal-text);margin-left:var(--toast-button-margin-start);margin-right:var(--toast-button-margin-end);border:none;cursor:pointer;outline:none;display:flex;align-items:center;flex-shrink:0;transition:opacity .4s,box-shadow .2s}[data-sonner-toast] [data-button]:focus-visible{box-shadow:0 0 0 2px #0006}[data-sonner-toast] [data-button]:first-of-type{margin-left:var(--toast-button-margin-start);margin-right:var(--toast-button-margin-end)}[data-sonner-toast] [data-cancel]{color:var(--normal-text);background:rgba(0,0,0,.08)}[data-sonner-toast][data-theme=dark] [data-cancel]{background:rgba(255,255,255,.3)}[data-sonner-toast] [data-close-button]{position:absolute;left:var(--toast-close-button-start);right:var(--toast-close-button-end);top:0;height:20px;width:20px;display:flex;justify-content:center;align-items:center;padding:0;background:var(--gray1);color:var(--gray12);border:1px solid var(--gray4);transform:var(--toast-close-button-transform);border-radius:50%;cursor:pointer;z-index:1;transition:opacity .1s,background .2s,border-color .2s}[data-sonner-toast] [data-close-button]:focus-visible{box-shadow:0 4px 12px #0000001a,0 0 0 2px #0003}[data-sonner-toast] [data-disabled=true]{cursor:not-allowed}[data-sonner-toast]:hover [data-close-button]:hover{background:var(--gray2);border-color:var(--gray5)}[data-sonner-toast][data-swiping=true]:before{content:"";position:absolute;left:0;right:0;height:100%;z-index:-1}[data-sonner-toast][data-y-position=top][data-swiping=true]:before{bottom:50%;transform:scaleY(3) translateY(50%)}[data-sonner-toast][data-y-position=bottom][data-swiping=true]:before{top:50%;transform:scaleY(3) translateY(-50%)}[data-sonner-toast][data-swiping=false][data-removed=true]:before{content:"";position:absolute;inset:0;transform:scaleY(2)}[data-sonner-toast]:after{content:"";position:absolute;left:0;height:calc(var(--gap) + 1px);bottom:100%;width:100%}[data-sonner-toast][data-mounted=true]{--y: translateY(0);opacity:1}[data-sonner-toast][data-expanded=false][data-front=false]{--scale: var(--toasts-before) * .05 + 1;--y: translateY(calc(var(--lift-amount) * var(--toasts-before))) scale(calc(-1 * var(--scale)));height:var(--front-toast-height)}[data-sonner-toast]>*{transition:opacity .4s}[data-sonner-toast][data-expanded=false][data-front=false][data-styled=true]>*{opacity:0}[data-sonner-toast][data-visible=false]{opacity:0;pointer-events:none}[data-sonner-toast][data-mounted=true][data-expanded=true]{--y: translateY(calc(var(--lift) * var(--offset)));height:var(--initial-height)}[data-sonner-toast][data-removed=true][data-front=true][data-swipe-out=false]{--y: translateY(calc(var(--lift) * -100%));opacity:0}[data-sonner-toast][data-removed=true][data-front=false][data-swipe-out=false][data-expanded=true]{--y: translateY(calc(var(--lift) * var(--offset) + var(--lift) * -100%));opacity:0}[data-sonner-toast][data-removed=true][data-front=false][data-swipe-out=false][data-expanded=false]{--y: translateY(40%);opacity:0;transition:transform .5s,opacity .2s}[data-sonner-toast][data-removed=true][data-front=false]:before{height:calc(var(--initial-height) + 20%)}[data-sonner-toast][data-swiping=true]{transform:var(--y) translateY(var(--swipe-amount, 0px));transition:none}[data-sonner-toast][data-swipe-out=true][data-y-position=bottom],[data-sonner-toast][data-swipe-out=true][data-y-position=top]{animation:swipe-out .2s ease-out forwards}@keyframes swipe-out{0%{transform:translateY(calc(var(--lift) * var(--offset) + var(--swipe-amount)));opacity:1}to{transform:translateY(calc(var(--lift) * var(--offset) + var(--swipe-amount) + var(--lift) * -100%));opacity:0}}@media (max-width: 600px){[data-sonner-toaster]{position:fixed;--mobile-offset: 16px;right:var(--mobile-offset);left:var(--mobile-offset);width:100%}[data-sonner-toaster] [data-sonner-toast]{left:0;right:0;width:calc(100% - 32px)}[data-sonner-toaster][data-x-position=left]{left:var(--mobile-offset)}[data-sonner-toaster][data-y-position=bottom]{bottom:20px}[data-sonner-toaster][data-y-position=top]{top:20px}[data-sonner-toaster][data-x-position=center]{left:var(--mobile-offset);right:var(--mobile-offset);transform:none}}[data-sonner-toaster][data-theme=light]{--normal-bg: #fff;--normal-border: var(--gray4);--normal-text: var(--gray12);--success-bg: hsl(143, 85%, 96%);--success-border: hsl(145, 92%, 91%);--success-text: hsl(140, 100%, 27%);--info-bg: hsl(208, 100%, 97%);--info-border: hsl(221, 91%, 91%);--info-text: hsl(210, 92%, 45%);--warning-bg: hsl(49, 100%, 97%);--warning-border: hsl(49, 91%, 91%);--warning-text: hsl(31, 92%, 45%);--error-bg: hsl(359, 100%, 97%);--error-border: hsl(359, 100%, 94%);--error-text: hsl(360, 100%, 45%)}[data-sonner-toaster][data-theme=light] [data-sonner-toast][data-invert=true]{--normal-bg: #000;--normal-border: hsl(0, 0%, 20%);--normal-text: var(--gray1)}[data-sonner-toaster][data-theme=dark] [data-sonner-toast][data-invert=true]{--normal-bg: #fff;--normal-border: var(--gray3);--normal-text: var(--gray12)}[data-sonner-toaster][data-theme=dark]{--normal-bg: #000;--normal-border: hsl(0, 0%, 20%);--normal-text: var(--gray1);--success-bg: hsl(150, 100%, 6%);--success-border: hsl(147, 100%, 12%);--success-text: hsl(150, 86%, 65%);--info-bg: hsl(215, 100%, 6%);--info-border: hsl(223, 100%, 12%);--info-text: hsl(216, 87%, 65%);--warning-bg: hsl(64, 100%, 6%);--warning-border: hsl(60, 100%, 12%);--warning-text: hsl(46, 87%, 65%);--error-bg: hsl(358, 76%, 10%);--error-border: hsl(357, 89%, 16%);--error-text: hsl(358, 100%, 81%)}[data-rich-colors=true] [data-sonner-toast][data-type=success],[data-rich-colors=true] [data-sonner-toast][data-type=success] [data-close-button]{background:var(--success-bg);border-color:var(--success-border);color:var(--success-text)}[data-rich-colors=true] [data-sonner-toast][data-type=info],[data-rich-colors=true] [data-sonner-toast][data-type=info] [data-close-button]{background:var(--info-bg);border-color:var(--info-border);color:var(--info-text)}[data-rich-colors=true] [data-sonner-toast][data-type=warning],[data-rich-colors=true] [data-sonner-toast][data-type=warning] [data-close-button]{background:var(--warning-bg);border-color:var(--warning-border);color:var(--warning-text)}[data-rich-colors=true] [data-sonner-toast][data-type=error],[data-rich-colors=true] [data-sonner-toast][data-type=error] [data-close-button]{background:var(--error-bg);border-color:var(--error-border);color:var(--error-text)}.sonner-loading-wrapper{--size: 16px;height:var(--size);width:var(--size);position:absolute;inset:0;z-index:10}.sonner-loading-wrapper[data-visible=false]{transform-origin:center;animation:sonner-fade-out .2s ease forwards}.sonner-spinner{position:relative;top:50%;left:50%;height:var(--size);width:var(--size)}.sonner-loading-bar{animation:sonner-spin 1.2s linear infinite;background:var(--gray11);border-radius:6px;height:8%;left:-10%;position:absolute;top:-3.9%;width:24%}.sonner-loading-bar:nth-child(1){animation-delay:-1.2s;transform:rotate(.0001deg) translate(146%)}.sonner-loading-bar:nth-child(2){animation-delay:-1.1s;transform:rotate(30deg) translate(146%)}.sonner-loading-bar:nth-child(3){animation-delay:-1s;transform:rotate(60deg) translate(146%)}.sonner-loading-bar:nth-child(4){animation-delay:-.9s;transform:rotate(90deg) translate(146%)}.sonner-loading-bar:nth-child(5){animation-delay:-.8s;transform:rotate(120deg) translate(146%)}.sonner-loading-bar:nth-child(6){animation-delay:-.7s;transform:rotate(150deg) translate(146%)}.sonner-loading-bar:nth-child(7){animation-delay:-.6s;transform:rotate(180deg) translate(146%)}.sonner-loading-bar:nth-child(8){animation-delay:-.5s;transform:rotate(210deg) translate(146%)}.sonner-loading-bar:nth-child(9){animation-delay:-.4s;transform:rotate(240deg) translate(146%)}.sonner-loading-bar:nth-child(10){animation-delay:-.3s;transform:rotate(270deg) translate(146%)}.sonner-loading-bar:nth-child(11){animation-delay:-.2s;transform:rotate(300deg) translate(146%)}.sonner-loading-bar:nth-child(12){animation-delay:-.1s;transform:rotate(330deg) translate(146%)}@keyframes sonner-fade-in{0%{opacity:0;transform:scale(.8)}to{opacity:1;transform:scale(1)}}@keyframes sonner-fade-out{0%{opacity:1;transform:scale(1)}to{opacity:0;transform:scale(.8)}}@keyframes sonner-spin{0%{opacity:1}to{opacity:.15}}@media (prefers-reduced-motion){[data-sonner-toast],[data-sonner-toast]>*,.sonner-loading-bar{transition:none!important;animation:none!important}}.sonner-loader{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);transform-origin:center;transition:opacity .2s,transform .2s}.sonner-loader[data-visible=false]{opacity:0;transform:scale(.8) translate(-50%,-50%)}</style>
+      <script src="./vercel/insights/script.js" defer="" data-sdkn="@vercel/analytics/next" data-sdkv="1.2.2" data-disable-auto-track="1"></script>
+      <script src="./vercel/insights/speed-insights/script.js" defer="" data-sdkn="@vercel/speed-insights/next" data-sdkv="1.0.10" data-route="/"></script>
+   </head>
+   <body class="__className_587f35">
+      <script>!function(){try{var d=document.documentElement,c=d.classList;c.remove('light','dark');var e=localStorage.getItem('theme');if('system'===e||(!e&&true)){var t='(prefers-color-scheme: dark)',m=window.matchMedia(t);if(m.media!==t||m.matches){d.style.colorScheme = 'dark';c.add('dark')}else{d.style.colorScheme = 'light';c.add('light')}}else if(e){c.add(e|| '')}if(e==='light'||e==='dark')d.style.colorScheme=e}catch(e){}}()</script>
+      <div class="dark:bg-black">
+         <div class="relative flex w-full items-center justify-center">
+            <div class="fixed inset-x-0 max-w-2xl mx-auto z-50 top-2">
+               <nav class="boder relative flex items-center justify-center space-x-4 rounded-full border border-black/[0.2] bg-white px-8 py-3 shadow-input dark:border-white/[0.2] dark:bg-black ">
+                  <div class="relative ">
+                     <p class="cursor-pointer text-black hover:opacity-[0.9] dark:text-white">Navigation</p>
+                  </div>
+                  <div class="relative ">
+                     <p class="cursor-pointer text-black hover:opacity-[0.9] dark:text-white">Social</p>
+                  </div>
+                  <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-white bg-background hover:bg-neutral-200 hover:text-accent-foreground dark:hover:bg-neutral-800 size-10" type="button" id="radix-:Rrf6ta:" aria-haspopup="menu" aria-expanded="false" data-state="closed">
+                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="size-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0">
+                        <path d="M7.5 0C7.77614 0 8 0.223858 8 0.5V2.5C8 2.77614 7.77614 3 7.5 3C7.22386 3 7 2.77614 7 2.5V0.5C7 0.223858 7.22386 0 7.5 0ZM2.1967 2.1967C2.39196 2.00144 2.70854 2.00144 2.90381 2.1967L4.31802 3.61091C4.51328 3.80617 4.51328 4.12276 4.31802 4.31802C4.12276 4.51328 3.80617 4.51328 3.61091 4.31802L2.1967 2.90381C2.00144 2.70854 2.00144 2.39196 2.1967 2.1967ZM0.5 7C0.223858 7 0 7.22386 0 7.5C0 7.77614 0.223858 8 0.5 8H2.5C2.77614 8 3 7.77614 3 7.5C3 7.22386 2.77614 7 2.5 7H0.5ZM2.1967 12.8033C2.00144 12.608 2.00144 12.2915 2.1967 12.0962L3.61091 10.682C3.80617 10.4867 4.12276 10.4867 4.31802 10.682C4.51328 10.8772 4.51328 11.1938 4.31802 11.3891L2.90381 12.8033C2.70854 12.9986 2.39196 12.9986 2.1967 12.8033ZM12.5 7C12.2239 7 12 7.22386 12 7.5C12 7.77614 12.2239 8 12.5 8H14.5C14.7761 8 15 7.77614 15 7.5C15 7.22386 14.7761 7 14.5 7H12.5ZM10.682 4.31802C10.4867 4.12276 10.4867 3.80617 10.682 3.61091L12.0962 2.1967C12.2915 2.00144 12.608 2.00144 12.8033 2.1967C12.9986 2.39196 12.9986 2.70854 12.8033 2.90381L11.3891 4.31802C11.1938 4.51328 10.8772 4.51328 10.682 4.31802ZM8 12.5C8 12.2239 7.77614 12 7.5 12C7.22386 12 7 12.2239 7 12.5V14.5C7 14.7761 7.22386 15 7.5 15C7.77614 15 8 14.7761 8 14.5V12.5ZM10.682 10.682C10.8772 10.4867 11.1938 10.4867 11.3891 10.682L12.8033 12.0962C12.9986 12.2915 12.9986 12.608 12.8033 12.8033C12.608 12.9986 12.2915 12.9986 12.0962 12.8033L10.682 11.3891C10.4867 11.1938 10.4867 10.8772 10.682 10.682ZM5.5 7.5C5.5 6.39543 6.39543 5.5 7.5 5.5C8.60457 5.5 9.5 6.39543 9.5 7.5C9.5 8.60457 8.60457 9.5 7.5 9.5C6.39543 9.5 5.5 8.60457 5.5 7.5ZM7.5 4.5C5.84315 4.5 4.5 5.84315 4.5 7.5C4.5 9.15685 5.84315 10.5 7.5 10.5C9.15685 10.5 10.5 9.15685 10.5 7.5C10.5 5.84315 9.15685 4.5 7.5 4.5Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                     </svg>
+                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute size-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100">
+                        <path d="M2.89998 0.499976C2.89998 0.279062 2.72089 0.0999756 2.49998 0.0999756C2.27906 0.0999756 2.09998 0.279062 2.09998 0.499976V1.09998H1.49998C1.27906 1.09998 1.09998 1.27906 1.09998 1.49998C1.09998 1.72089 1.27906 1.89998 1.49998 1.89998H2.09998V2.49998C2.09998 2.72089 2.27906 2.89998 2.49998 2.89998C2.72089 2.89998 2.89998 2.72089 2.89998 2.49998V1.89998H3.49998C3.72089 1.89998 3.89998 1.72089 3.89998 1.49998C3.89998 1.27906 3.72089 1.09998 3.49998 1.09998H2.89998V0.499976ZM5.89998 3.49998C5.89998 3.27906 5.72089 3.09998 5.49998 3.09998C5.27906 3.09998 5.09998 3.27906 5.09998 3.49998V4.09998H4.49998C4.27906 4.09998 4.09998 4.27906 4.09998 4.49998C4.09998 4.72089 4.27906 4.89998 4.49998 4.89998H5.09998V5.49998C5.09998 5.72089 5.27906 5.89998 5.49998 5.89998C5.72089 5.89998 5.89998 5.72089 5.89998 5.49998V4.89998H6.49998C6.72089 4.89998 6.89998 4.72089 6.89998 4.49998C6.89998 4.27906 6.72089 4.09998 6.49998 4.09998H5.89998V3.49998ZM1.89998 6.49998C1.89998 6.27906 1.72089 6.09998 1.49998 6.09998C1.27906 6.09998 1.09998 6.27906 1.09998 6.49998V7.09998H0.499976C0.279062 7.09998 0.0999756 7.27906 0.0999756 7.49998C0.0999756 7.72089 0.279062 7.89998 0.499976 7.89998H1.09998V8.49998C1.09998 8.72089 1.27906 8.89997 1.49998 8.89997C1.72089 8.89997 1.89998 8.72089 1.89998 8.49998V7.89998H2.49998C2.72089 7.89998 2.89998 7.72089 2.89998 7.49998C2.89998 7.27906 2.72089 7.09998 2.49998 7.09998H1.89998V6.49998ZM8.54406 0.98184L8.24618 0.941586C8.03275 0.917676 7.90692 1.1655 8.02936 1.34194C8.17013 1.54479 8.29981 1.75592 8.41754 1.97445C8.91878 2.90485 9.20322 3.96932 9.20322 5.10022C9.20322 8.37201 6.82247 11.0878 3.69887 11.6097C3.45736 11.65 3.20988 11.6772 2.96008 11.6906C2.74563 11.702 2.62729 11.9535 2.77721 12.1072C2.84551 12.1773 2.91535 12.2458 2.98667 12.3128L3.05883 12.3795L3.31883 12.6045L3.50684 12.7532L3.62796 12.8433L3.81491 12.9742L3.99079 13.089C4.11175 13.1651 4.23536 13.2375 4.36157 13.3059L4.62496 13.4412L4.88553 13.5607L5.18837 13.6828L5.43169 13.7686C5.56564 13.8128 5.70149 13.8529 5.83857 13.8885C5.94262 13.9155 6.04767 13.9401 6.15405 13.9622C6.27993 13.9883 6.40713 14.0109 6.53544 14.0298L6.85241 14.0685L7.11934 14.0892C7.24637 14.0965 7.37436 14.1002 7.50322 14.1002C11.1483 14.1002 14.1032 11.1453 14.1032 7.50023C14.1032 7.25044 14.0893 7.00389 14.0623 6.76131L14.0255 6.48407C13.991 6.26083 13.9453 6.04129 13.8891 5.82642C13.8213 5.56709 13.7382 5.31398 13.6409 5.06881L13.5279 4.80132L13.4507 4.63542L13.3766 4.48666C13.2178 4.17773 13.0353 3.88295 12.8312 3.60423L12.6782 3.40352L12.4793 3.16432L12.3157 2.98361L12.1961 2.85951L12.0355 2.70246L11.8134 2.50184L11.4925 2.24191L11.2483 2.06498L10.9562 1.87446L10.6346 1.68894L10.3073 1.52378L10.1938 1.47176L9.95488 1.3706L9.67791 1.2669L9.42566 1.1846L9.10075 1.09489L8.83599 1.03486L8.54406 0.98184ZM10.4032 5.30023C10.4032 4.27588 10.2002 3.29829 9.83244 2.40604C11.7623 3.28995 13.1032 5.23862 13.1032 7.50023C13.1032 10.593 10.596 13.1002 7.50322 13.1002C6.63646 13.1002 5.81597 12.9036 5.08355 12.5522C6.5419 12.0941 7.81081 11.2082 8.74322 10.0416C8.87963 10.2284 9.10028 10.3497 9.34928 10.3497C9.76349 10.3497 10.0993 10.0139 10.0993 9.59971C10.0993 9.24256 9.84965 8.94373 9.51535 8.86816C9.57741 8.75165 9.63653 8.63334 9.6926 8.51332C9.88358 8.63163 10.1088 8.69993 10.35 8.69993C11.0403 8.69993 11.6 8.14028 11.6 7.44993C11.6 6.75976 11.0406 6.20024 10.3505 6.19993C10.3853 5.90487 10.4032 5.60464 10.4032 5.30023Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                     </svg>
+                     <span class="sr-only">Toggle theme</span>
+                  </button>
+               </nav>
+            </div>
+         </div>
+         <main>
+            <div id="landing-page" class="bg- relative flex  h-screen w-full flex-col items-center justify-center bg-white bg-dot-black/[0.2] dark:bg-black dark:bg-dot-white/[0.2]">
+               <div class="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_50%,black)] dark:bg-black"></div>
+               <p class="text-xs text-neutral-600 dark:text-neutral-200 sm:text-base  "> Hello, I'm Safet. A passionate Software Engineer.</p>
+               <div class="flex space-x-1 my-6">
+                  <div class="overflow-hidden pb-2" style="width: fit-content;">
+                     <div class="lg:text:3xl text-xl font-bold xl:text-5xl" style="white-space:nowrap">
+                        <div>
+                           <div class="inline-block"><span class="dark:text-white text-black">J</span><span class="dark:text-white text-black">a</span><span class="dark:text-white text-black">v</span><span class="dark:text-white text-black">a</span>&nbsp;</div>
+                           <div class="inline-block"><span class="dark:text-white text-black">a</span><span class="dark:text-white text-black">n</span><span class="dark:text-white text-black">d</span>&nbsp;</div>
+                           <div class="inline-block"><span class="dark:text-white text-black">R</span><span class="dark:text-white text-black">e</span><span class="dark:text-white text-black">a</span><span class="dark:text-white text-black">c</span><span class="dark:text-white text-black">t</span><span class="dark:text-white text-black">/</span><span class="dark:text-white text-black">N</span><span class="dark:text-white text-black">e</span><span class="dark:text-white text-black">x</span><span class="dark:text-white text-black">t</span><span class="dark:text-white text-black">.</span><span class="dark:text-white text-black">j</span><span class="dark:text-white text-black">s</span>&nbsp;</div>
+                           <div class="inline-block"><span class="text-blue-500 dark:text-blue-500">d</span><span class="text-blue-500 dark:text-blue-500">e</span><span class="text-blue-500 dark:text-blue-500">v</span><span class="text-blue-500 dark:text-blue-500">e</span><span class="text-blue-500 dark:text-blue-500">l</span><span class="text-blue-500 dark:text-blue-500">o</span><span class="text-blue-500 dark:text-blue-500">p</span><span class="text-blue-500 dark:text-blue-500">e</span><span class="text-blue-500 dark:text-blue-500">r</span>&nbsp;</div>
+                        </div>
+                     </div>
+                  </div>
+                  <span class="block rounded-sm w-[4px] h-6 xl:h-12 bg-blue-500" style="opacity:0"></span>
+               </div>
+               <div class="z-30 flex flex-col items-center space-x-0 space-y-4 md:flex-row md:space-x-4 md:space-y-0"><a href="https://drive.google.com/file/d/1xHPigW5eJQSCCgx3VBFyH5E0y_wwOdDN/view?usp=sharing"><button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2">Download CV</button></a><a href="https://safetpojskic.com/#contact-me"><button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-secondary text-secondary-foreground hover:bg-secondary/80 h-10 px-4 py-2">Contact Me</button></a></div>
+               <div class="absolute h-full w-full inset-0 [mask-size:40px] [mask-repeat:no-repeat] hidden md:flex items-center justify-center">
+                  <svg class=" pointer-events-none absolute z-0 size-full " width="100%" height="100%" viewBox="0 0 696 316" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M-380 -189C-380 -189 -312 216 152 343C616 470 684 875 684 875M-373 -197C-373 -197 -305 208 159 335C623 462 691 867 691 867M-366 -205C-366 -205 -298 200 166 327C630 454 698 859 698 859M-359 -213C-359 -213 -291 192 173 319C637 446 705 851 705 851M-352 -221C-352 -221 -284 184 180 311C644 438 712 843 712 843M-345 -229C-345 -229 -277 176 187 303C651 430 719 835 719 835M-338 -237C-338 -237 -270 168 194 295C658 422 726 827 726 827M-331 -245C-331 -245 -263 160 201 287C665 414 733 819 733 819M-324 -253C-324 -253 -256 152 208 279C672 406 740 811 740 811M-317 -261C-317 -261 -249 144 215 271C679 398 747 803 747 803M-310 -269C-310 -269 -242 136 222 263C686 390 754 795 754 795M-303 -277C-303 -277 -235 128 229 255C693 382 761 787 761 787M-296 -285C-296 -285 -228 120 236 247C700 374 768 779 768 779M-289 -293C-289 -293 -221 112 243 239C707 366 775 771 775 771M-282 -301C-282 -301 -214 104 250 231C714 358 782 763 782 763M-275 -309C-275 -309 -207 96 257 223C721 350 789 755 789 755M-268 -317C-268 -317 -200 88 264 215C728 342 796 747 796 747M-261 -325C-261 -325 -193 80 271 207C735 334 803 739 803 739M-254 -333C-254 -333 -186 72 278 199C742 326 810 731 810 731M-247 -341C-247 -341 -179 64 285 191C749 318 817 723 817 723M-240 -349C-240 -349 -172 56 292 183C756 310 824 715 824 715M-233 -357C-233 -357 -165 48 299 175C763 302 831 707 831 707M-226 -365C-226 -365 -158 40 306 167C770 294 838 699 838 699M-219 -373C-219 -373 -151 32 313 159C777 286 845 691 845 691M-212 -381C-212 -381 -144 24 320 151C784 278 852 683 852 683M-205 -389C-205 -389 -137 16 327 143C791 270 859 675 859 675M-198 -397C-198 -397 -130 8 334 135C798 262 866 667 866 667M-191 -405C-191 -405 -123 0 341 127C805 254 873 659 873 659M-184 -413C-184 -413 -116 -8 348 119C812 246 880 651 880 651M-177 -421C-177 -421 -109 -16 355 111C819 238 887 643 887 643M-170 -429C-170 -429 -102 -24 362 103C826 230 894 635 894 635M-163 -437C-163 -437 -95 -32 369 95C833 222 901 627 901 627M-156 -445C-156 -445 -88 -40 376 87C840 214 908 619 908 619M-149 -453C-149 -453 -81 -48 383 79C847 206 915 611 915 611M-142 -461C-142 -461 -74 -56 390 71C854 198 922 603 922 603M-135 -469C-135 -469 -67 -64 397 63C861 190 929 595 929 595M-128 -477C-128 -477 -60 -72 404 55C868 182 936 587 936 587M-121 -485C-121 -485 -53 -80 411 47C875 174 943 579 943 579M-114 -493C-114 -493 -46 -88 418 39C882 166 950 571 950 571M-107 -501C-107 -501 -39 -96 425 31C889 158 957 563 957 563M-100 -509C-100 -509 -32 -104 432 23C896 150 964 555 964 555M-93 -517C-93 -517 -25 -112 439 15C903 142 971 547 971 547M-86 -525C-86 -525 -18 -120 446 7C910 134 978 539 978 539M-79 -533C-79 -533 -11 -128 453 -1C917 126 985 531 985 531M-72 -541C-72 -541 -4 -136 460 -9C924 118 992 523 992 523M-65 -549C-65 -549 3 -144 467 -17C931 110 999 515 999 515M-58 -557C-58 -557 10 -152 474 -25C938 102 1006 507 1006 507M-51 -565C-51 -565 17 -160 481 -33C945 94 1013 499 1013 499M-44 -573C-44 -573 24 -168 488 -41C952 86 1020 491 1020 491M-37 -581C-37 -581 31 -176 495 -49C959 78 1027 483 1027 483M-30 -589C-30 -589 38 -184 502 -57C966 70 1034 475 1034 475M-23 -597C-23 -597 45 -192 509 -65C973 62 1041 467 1041 467M-16 -605C-16 -605 52 -200 516 -73C980 54 1048 459 1048 459M-9 -613C-9 -613 59 -208 523 -81C987 46 1055 451 1055 451M-2 -621C-2 -621 66 -216 530 -89C994 38 1062 443 1062 443M5 -629C5 -629 73 -224 537 -97C1001 30 1069 435 1069 435M12 -637C12 -637 80 -232 544 -105C1008 22 1076 427 1076 427M19 -645C19 -645 87 -240 551 -113C1015 14 1083 419 1083 419" stroke="url(#paint0_radial_242_278)" stroke-opacity="0.05" stroke-width="0.5"></path>
+                     <path d="M-380 -189C-380 -189 -312 216 152 343C616 470 684 875 684 875" stroke="url(#linearGradient-0)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-373 -197C-373 -197 -305 208 159 335C623 462 691 867 691 867" stroke="url(#linearGradient-1)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-366 -205C-366 -205 -298 200 166 327C630 454 698 859 698 859" stroke="url(#linearGradient-2)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-359 -213C-359 -213 -291 192 173 319C637 446 705 851 705 851" stroke="url(#linearGradient-3)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-352 -221C-352 -221 -284 184 180 311C644 438 712 843 712 843" stroke="url(#linearGradient-4)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-345 -229C-345 -229 -277 176 187 303C651 430 719 835 719 835" stroke="url(#linearGradient-5)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-338 -237C-338 -237 -270 168 194 295C658 422 726 827 726 827" stroke="url(#linearGradient-6)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-331 -245C-331 -245 -263 160 201 287C665 414 733 819 733 819" stroke="url(#linearGradient-7)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-324 -253C-324 -253 -256 152 208 279C672 406 740 811 740 811" stroke="url(#linearGradient-8)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-317 -261C-317 -261 -249 144 215 271C679 398 747 803 747 803" stroke="url(#linearGradient-9)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-310 -269C-310 -269 -242 136 222 263C686 390 754 795 754 795" stroke="url(#linearGradient-10)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-303 -277C-303 -277 -235 128 229 255C693 382 761 787 761 787" stroke="url(#linearGradient-11)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-296 -285C-296 -285 -228 120 236 247C700 374 768 779 768 779" stroke="url(#linearGradient-12)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-289 -293C-289 -293 -221 112 243 239C707 366 775 771 775 771" stroke="url(#linearGradient-13)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-282 -301C-282 -301 -214 104 250 231C714 358 782 763 782 763" stroke="url(#linearGradient-14)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-275 -309C-275 -309 -207 96 257 223C721 350 789 755 789 755" stroke="url(#linearGradient-15)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-268 -317C-268 -317 -200 88 264 215C728 342 796 747 796 747" stroke="url(#linearGradient-16)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-261 -325C-261 -325 -193 80 271 207C735 334 803 739 803 739" stroke="url(#linearGradient-17)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-254 -333C-254 -333 -186 72 278 199C742 326 810 731 810 731" stroke="url(#linearGradient-18)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-247 -341C-247 -341 -179 64 285 191C749 318 817 723 817 723" stroke="url(#linearGradient-19)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-240 -349C-240 -349 -172 56 292 183C756 310 824 715 824 715" stroke="url(#linearGradient-20)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-233 -357C-233 -357 -165 48 299 175C763 302 831 707 831 707" stroke="url(#linearGradient-21)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-226 -365C-226 -365 -158 40 306 167C770 294 838 699 838 699" stroke="url(#linearGradient-22)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-219 -373C-219 -373 -151 32 313 159C777 286 845 691 845 691" stroke="url(#linearGradient-23)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-212 -381C-212 -381 -144 24 320 151C784 278 852 683 852 683" stroke="url(#linearGradient-24)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-205 -389C-205 -389 -137 16 327 143C791 270 859 675 859 675" stroke="url(#linearGradient-25)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-198 -397C-198 -397 -130 8 334 135C798 262 866 667 866 667" stroke="url(#linearGradient-26)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-191 -405C-191 -405 -123 0 341 127C805 254 873 659 873 659" stroke="url(#linearGradient-27)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-184 -413C-184 -413 -116 -8 348 119C812 246 880 651 880 651" stroke="url(#linearGradient-28)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-177 -421C-177 -421 -109 -16 355 111C819 238 887 643 887 643" stroke="url(#linearGradient-29)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-170 -429C-170 -429 -102 -24 362 103C826 230 894 635 894 635" stroke="url(#linearGradient-30)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-163 -437C-163 -437 -95 -32 369 95C833 222 901 627 901 627" stroke="url(#linearGradient-31)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-156 -445C-156 -445 -88 -40 376 87C840 214 908 619 908 619" stroke="url(#linearGradient-32)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-149 -453C-149 -453 -81 -48 383 79C847 206 915 611 915 611" stroke="url(#linearGradient-33)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-142 -461C-142 -461 -74 -56 390 71C854 198 922 603 922 603" stroke="url(#linearGradient-34)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-135 -469C-135 -469 -67 -64 397 63C861 190 929 595 929 595" stroke="url(#linearGradient-35)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-128 -477C-128 -477 -60 -72 404 55C868 182 936 587 936 587" stroke="url(#linearGradient-36)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-121 -485C-121 -485 -53 -80 411 47C875 174 943 579 943 579" stroke="url(#linearGradient-37)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-114 -493C-114 -493 -46 -88 418 39C882 166 950 571 950 571" stroke="url(#linearGradient-38)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-107 -501C-107 -501 -39 -96 425 31C889 158 957 563 957 563" stroke="url(#linearGradient-39)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-100 -509C-100 -509 -32 -104 432 23C896 150 964 555 964 555" stroke="url(#linearGradient-40)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-93 -517C-93 -517 -25 -112 439 15C903 142 971 547 971 547" stroke="url(#linearGradient-41)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-86 -525C-86 -525 -18 -120 446 7C910 134 978 539 978 539" stroke="url(#linearGradient-42)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-79 -533C-79 -533 -11 -128 453 -1C917 126 985 531 985 531" stroke="url(#linearGradient-43)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-72 -541C-72 -541 -4 -136 460 -9C924 118 992 523 992 523" stroke="url(#linearGradient-44)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-65 -549C-65 -549 3 -144 467 -17C931 110 999 515 999 515" stroke="url(#linearGradient-45)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-58 -557C-58 -557 10 -152 474 -25C938 102 1006 507 1006 507" stroke="url(#linearGradient-46)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-51 -565C-51 -565 17 -160 481 -33C945 94 1013 499 1013 499" stroke="url(#linearGradient-47)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-44 -573C-44 -573 24 -168 488 -41C952 86 1020 491 1020 491" stroke="url(#linearGradient-48)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <path d="M-37 -581C-37 -581 31 -176 495 -49C959 78 1027 483 1027 483" stroke="url(#linearGradient-49)" stroke-opacity="0.4" stroke-width="0.5"></path>
+                     <defs>
+                        <lineargradient id="linearGradient-0" x1="77.96175%" x2="74.06366%" y1="77.96175%" y2="77.44366%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-1" x1="14.89%" x2="14.1455%" y1="14.89%" y2="14.68438%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-2" x1="99.49168%" x2="94.5171%" y1="99.49168%" y2="94.75693%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-3" x1="47.76677%" x2="45.37844%" y1="47.76677%" y2="44.50126%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-4" x1="39.19978%" x2="37.23979%" y1="39.19978%" y2="39.06392%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-5" x1="1.36614%" x2="1.29783%" y1="1.36614%" y2="1.37852%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-6" x1="99.43145%" x2="94.45987%" y1="99.43145%" y2="99.85374%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-7" x1="29.15932%" x2="27.70136%" y1="29.15932%" y2="28.62785%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-8" x1="57.77217%" x2="54.88356%" y1="57.77217%" y2="55.42153%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-9" x1="5.68108%" x2="5.39702%" y1="5.68108%" y2="5.48789%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-10" x1="98.23253%" x2="93.3209%" y1="98.23253%" y2="95.77442%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-11" x1="6.04888%" x2="5.74643%" y1="6.04888%" y2="5.95699%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-12" x1="85.32523%" x2="81.05897%" y1="85.32523%" y2="82.40931%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-13" x1="0.05756%" x2="0.05468%" y1="0.05756%" y2="0.05634%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-14" x1="99.44375%" x2="94.47157%" y1="99.44375%" y2="92.98009%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-15" x1="87.30957%" x2="82.94409%" y1="87.30957%" y2="84.33763%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-16" x1="97.66321%" x2="92.78005%" y1="97.66321%" y2="93.71265%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-17" x1="47.40094%" x2="45.0309%" y1="47.40094%" y2="44.14952%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-18" x1="84.29252%" x2="80.0779%" y1="84.29252%" y2="79.35618%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-19" x1="10.5363%" x2="10.00948%" y1="10.5363%" y2="10.17461%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-20" x1="99.99356%" x2="94.99389%" y1="99.99356%" y2="93.51644%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-21" x1="1.52082%" x2="1.44478%" y1="1.52082%" y2="1.51516%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-22" x1="4.44215%" x2="4.22005%" y1="4.44215%" y2="4.41297%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-23" x1="99.58124%" x2="94.60218%" y1="99.58124%" y2="94.68582%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-24" x1="48.79161%" x2="46.35203%" y1="48.79161%" y2="46.03879%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-25" x1="74.0198%" x2="70.31881%" y1="74.0198%" y2="69.27905%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-26" x1="98.78065%" x2="93.84162%" y1="98.78065%" y2="95.51532%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-27" x1="94.92078%" x2="90.17474%" y1="94.92078%" y2="92.89898%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-28" x1="87.61262%" x2="83.23199%" y1="87.61262%" y2="83.02231%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-29" x1="73.95464%" x2="70.2569%" y1="73.95464%" y2="72.49967%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-30" x1="54.86376%" x2="52.12057%" y1="54.86376%" y2="54.14516%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-31" x1="0.78314%" x2="0.74398%" y1="0.78314%" y2="0.78509%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-32" x1="6.23654%" x2="5.92472%" y1="6.23654%" y2="6.15549%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-33" x1="88.65038%" x2="84.21786%" y1="88.65038%" y2="86.02129%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-34" x1="73.82416%" x2="70.13295%" y1="73.82416%" y2="69.30312%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-35" x1="89.03615%" x2="84.58434%" y1="89.03615%" y2="86.88204%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-36" x1="42.73534%" x2="40.59857%" y1="42.73534%" y2="40.14796%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-37" x1="9.43026%" x2="8.95875%" y1="9.43026%" y2="9.29997%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-38" x1="33.47236%" x2="31.79874%" y1="33.47236%" y2="32.01247%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-39" x1="99.77587%" x2="94.78708%" y1="99.77587%" y2="93.2935%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-40" x1="52.45274%" x2="49.8301%" y1="52.45274%" y2="49.84941%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-41" x1="43.89783%" x2="41.70294%" y1="43.89783%" y2="44.30241%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-42" x1="71.04229%" x2="67.49018%" y1="71.04229%" y2="70.19543%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-43" x1="71.71163%" x2="68.12605%" y1="71.71163%" y2="68.95883%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-44" x1="53.91489%" x2="51.21915%" y1="53.91489%" y2="50.66249%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-45" x1="97.8767%" x2="92.98287%" y1="97.8767%" y2="93.84643%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-46" x1="0.01937%" x2="0.0184%" y1="0.01937%" y2="0.01873%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-47" x1="6.23654%" x2="5.92472%" y1="6.23654%" y2="6.03631%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-48" x1="99.15807%" x2="94.20017%" y1="99.15807%" y2="97.44865%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-49" x1="1.42322%" x2="1.35206%" y1="1.42322%" y2="1.35103%">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="32.5%" stop-color="#6344F5"></stop>
+                           <stop offset="100%" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                        <radialgradient id="paint0_radial_242_278" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(352 34) rotate(90) scale(555 1560.62)">
+                           <stop offset="0.0666667" stop-color="var(--neutral-300)"></stop>
+                           <stop offset="0.243243" stop-color="var(--neutral-300)"></stop>
+                           <stop offset="0.43594" stop-color="white" stop-opacity="0"></stop>
+                        </radialgradient>
+                     </defs>
+                  </svg>
+               </div>
+            </div>
+            <h1 id="experience" class="mx-auto max-w-5xl px-8 pb-8 pt-20 text-2xl font-bold dark:text-white md:pt-32 md:text-7xl">Experience</h1>
+            <div class="relative w-full max-w-4xl mx-auto h-full px-6">
+               <div class="absolute -left-4 top-3 md:-left-20">
+                  <div class="border-netural-200 ml-[27px] flex size-4 items-center justify-center rounded-full border shadow-sm" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+                     <div class="size-2 rounded-full  border border-neutral-300 bg-white" style="background-color: var(--emerald-500); border-color: var(--emerald-600);"></div>
+                  </div>
+                  <svg viewBox="0 0 20 884" width="20" height="884" class=" ml-4 block" aria-hidden="true">
+                     <path d="M 1 0V -36 l 18 24 V 707.2 l -18 24V 884" fill="none" stroke="#9091A0" stroke-opacity="0.16"></path>
+                     <path d="M 1 0V -36 l 18 24 V 707.2 l -18 24V 884" fill="none" stroke="url(#gradient)" stroke-width="1.25" class="motion-reduce:hidden"></path>
+                     <defs>
+                        <lineargradient id="gradient" gradientUnits="userSpaceOnUse" x1="0" x2="0" y1="50" y2="50">
+                           <stop stop-color="#18CCFC" stop-opacity="0"></stop>
+                           <stop stop-color="#18CCFC"></stop>
+                           <stop offset="0.325" stop-color="#6344F5"></stop>
+                           <stop offset="1" stop-color="#AE48FF" stop-opacity="0"></stop>
+                        </lineargradient>
+                     </defs>
+                  </svg>
+               </div>
+               <div>
+                  <div class="relative mx-auto max-w-2xl pb-32 pt-4 text-white antialiased">
+                     <div class="mb-10 mt-4 md:mt-0">
+                        <h2 class="text-xl text-black dark:text-white">Pickleball.com</h2>
+                        <span class="w-fit rounded-full py-1 text-sm italic text-neutral-800 dark:text-neutral-200">Software Engineer/Jan 2024 - Present</span>
+                        <div class="prose prose-sm dark:prose-invert mt-2 text-sm text-black dark:text-white">
+                           <ul class="list-disc">
+                              <li>Developed a full-stack enterprise applications using React and Nextjs.</li>
+                              <li>Lead the frontend development team, focusing on creating, improving, and fine-tuning web applications to make them fast and reliable. My job includes planning our technical approaches, guiding the team, and actively coding and reviewing code.</li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="mb-10 mt-4 md:mt-0">
+                        <h2 class="text-xl text-black dark:text-white">Bosnia and Herzegovina Futures Foundation</h2>
+                        <span class="w-fit rounded-full py-1 text-sm italic text-neutral-800 dark:text-neutral-200">Junior -&gt; Senior -&gt; Alumni/Sep 2021 – Present</span>
+                        <div class="prose prose-sm dark:prose-invert mt-2 text-sm text-black dark:text-white">
+                           <ul class="list-disc">
+                              <li>Actively engaged in personal development, focusing on enhancing my soft skills and public speaking abilities under the guidance of experienced mentors.</li>
+                              <li>Transitioned into a mentorship role, where I guided high school students in developing their soft skills and provided guidance in career planning and decision-making.</li>
+                              <li>Volunteered in web development team creating fls.ba info website</li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="mb-10 mt-4 md:mt-0">
+                        <h2 class="text-xl text-black dark:text-white">Atlantbh</h2>
+                        <span class="w-fit rounded-full py-1 text-sm italic text-neutral-800 dark:text-neutral-200">Junior Software Engineer/Jun 2022 - Jan 2024</span>
+                        <div class="prose prose-sm dark:prose-invert mt-2 text-sm text-black dark:text-white">
+                           <ul class="list-disc">
+                              <li>Developed a full-stack enterprise applications using React, PostgreSQL and Docker.</li>
+                              <li>Conducted code reviews, contributing to maintaining high standards of code quality and team collaboration.</li>
+                              <li>Provided mentorship to two IT college students, enhancing their practical software engineering skills.</li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="mb-10 mt-4 md:mt-0">
+                        <h2 class="text-xl text-black dark:text-white">Atlantbh (Intenship)</h2>
+                        <span class="w-fit rounded-full py-1 text-sm italic text-neutral-800 dark:text-neutral-200">Full Stack Developer/Feb 2022 - May 2022</span>
+                        <div class="prose prose-sm dark:prose-invert mt-2 text-sm text-black dark:text-white">
+                           <ul class="list-disc">
+                              <li>Developed full-stack applications with React.js and Spring Boot.</li>
+                              <li>Implemented essential software development practices such as GitHub for version control, Maven for project management, JUnit for testing, and applied design patterns and MVC architecture.</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="mx-auto max-w-5xl px-8 pb-8">
+               <h1 id="skills" class="max-w-5xl pt-20 text-2xl font-bold dark:text-white md:pt-32 md:text-7xl">Skills</h1>
+               <div class="grid grid-cols-1 gap-6  py-10 md:grid-cols-2 lg:grid-cols-3">
+                  <a class="relative mx-auto flex h-[13rem] w-full max-w-full flex-col items-start border border-black/[0.2] p-4 dark:border-white/[0.2]" href="https://react.dev/">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute -left-3 -top-3 size-6 text-black dark:text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"></path>
+                     </svg>
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute -bottom-3 -left-3 size-6 text-black dark:text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"></path>
+                     </svg>
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute -right-3 -top-3 size-6 text-black dark:text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"></path>
+                     </svg>
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute -bottom-3 -right-3 size-6 text-black dark:text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"></path>
+                     </svg>
+                     <div class="p-0.5 bg-transparent aspect-square flex items-center justify-center w-full h-full relative">
+                        <div class="group/card relative flex size-full items-center justify-center overflow-hidden rounded-3xl bg-transparent">
+                           <div class="pointer-events-none">
+                              <div class="absolute inset-0 rounded-2xl  [mask-image:linear-gradient(white,transparent)] group-hover/card:opacity-50"></div>
+                              <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-green-500 to-blue-700 opacity-0  backdrop-blur-xl transition duration-500 group-hover/card:opacity-100" style="mask-image:radial-gradient(250px at 0px 0px, white, transparent);-webkit-mask-image:radial-gradient(250px at 0px 0px, white, transparent)"></div>
+                              <div class="absolute inset-0 rounded-2xl opacity-0 mix-blend-overlay  group-hover/card:opacity-100" style="mask-image:radial-gradient(250px at 0px 0px, white, transparent);-webkit-mask-image:radial-gradient(250px at 0px 0px, white, transparent)">
+                                 <p class="absolute inset-x-0 h-full whitespace-pre-wrap break-words font-mono text-xs font-bold text-white transition duration-500">PW9Pt7E68plli2IjxOimQ82VZwHCQnFzgNTldXC9GOo2rxWnwFWaxaj335ueZW3f53jOMyud37ucuRF1tsR1WbKEBSCLJChpm4sQmoahZXOV7UcpqO2MHNs8yt4zlcz5i34b59LHX3yYyUOWdVLNErvs2Q9oUJSt6pbV1GcaPsve5ZniW6DsI0lhMDpVDqjH62Sjtx2e5ucUdp9zU35NjLKKQrXiYCIMD55zA8NGiwafu6WRGhvo1GHYSoFiT8NL952q79HOJzrNQtAFU5r6oFW7NcmHL8HR7rDrJgeXqRJgZ4icsjL1KBzenfX5YbcI24MqnBSLE3bHM2FfoxLxv4eqSgsbWY90i0E5S9xluiGEyLLwwusihy73QDmtShsyFPwAKoBzfOCyZ3p7uW7ENFLo6BATH2wVOEcfyB7TNtWVpLaejcfXtpiXVtEhUG7FKflleJ3CiPqLKQfpQgFWiJKgK3WcNsSLoVw0GTIguiBMC4GyWAnl6TbHlaMple6He3xORHhdELVdXjeDajH7LWCjDiwr7YbtbIpcZGxGRqilaqKYXdFtFrgByS1hDjENpKdhHk1oB1KHZWwknB1oZ7qeMqGZoV84gZf6O26YmhfXUwaIFieSixaCeUircOoN3PxAanfYVRzuLO9ToUIeq3g5sfJg0QZhRkqueXhfB6w9Xbw1Nn0nJgJYQJbWzy0TRYazigxg11z7CUDZ7lowUioSD9oWZrMRqGfKSLjylZlIYIRe1YzzWw9Gi7jZ6066IyHHSdqBtO8kpROjIzrtn5jsHnjGbHgImm4YAmzTkH4xgNtTGiOdRDapNxf34v9l3hQqrq5uj3ZdwqeJyl58zdkYWhLZlzgTI0ciUNyJiP8mXdTwtsofJIBpU97sU4Yc4gOOsePJ6qkFWpxqsOnSC1qOOH92tf78QfRvsJfq62USO1svULkjS723xwRqmfg5f3JmqmgNYaMRjqdHWSBSGzA8i4oohASbnLnmEPrMPMK8jGDla3lOX9ScTsJzaS7nvnQsycUs8ShwjtUdFH2mOvGKhodLHesGvcmlGKEIuyCoZuemdV9w4HitvMGmkJNvfb0g6QPOAlXc37FVfcr2dOSl14Aymc0NUqOn72ev2cMYW9PdRBkQrsfdSElk0d0NJ3mb4DstHL85XK4aT3TeLICSWj9u4Lagt5IE1FsZywAixdsxozHDuOQ3RcMofJiGHf6Z9RqQOVhl6m4HRb8T70ztI1OqFpd7VXGr8dd9VFuk5HbhPpCh6iscG8IOMw7U3M5JEMXzFJ55huDe4eoOwsU95KVb6xOcAvXdDPbSfnMFqiVYa2k5fdgcw890isaU1sEWeBpzc9pQPwYr2fAKBeA7rGizmnid2uETfGDDdLN9mTTA0wTedOLAiYH1SED7PvHAWoZCEO3dmluXh24IXeqvXiycAr9CeRfUEN4g26sEGfelw0pyds65Lh5JveKYiwvQxtSg46ED3fl6RrjQsmuQO6y0</p>
+                              </div>
+                           </div>
+                           <div class="relative z-10 flex items-center justify-center">
+                              <div class="relative flex size-44 flex-col  items-center justify-center rounded-full text-4xl font-bold text-white">
+                                 <div class="absolute size-full rounded-full bg-white/[0.8] blur-sm dark:bg-black/[0.8]"></div>
+                                 <span class="z-20 whitespace-nowrap text-black dark:text-white">React.js</span>
+                                 <span class="z-20 mt-4 whitespace-nowrap text-black dark:text-white">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M418.2 177.2c-5.4-1.8-10.8-3.5-16.2-5.1.9-3.7 1.7-7.4 2.5-11.1 12.3-59.6 4.2-107.5-23.1-123.3-26.3-15.1-69.2.6-112.6 38.4-4.3 3.7-8.5 7.6-12.5 11.5-2.7-2.6-5.5-5.2-8.3-7.7-45.5-40.4-91.1-57.4-118.4-41.5-26.2 15.2-34 60.3-23 116.7 1.1 5.6 2.3 11.1 3.7 16.7-6.4 1.8-12.7 3.8-18.6 5.9C38.3 196.2 0 225.4 0 255.6c0 31.2 40.8 62.5 96.3 81.5 4.5 1.5 9 3 13.6 4.3-1.5 6-2.8 11.9-4 18-10.5 55.5-2.3 99.5 23.9 114.6 27 15.6 72.4-.4 116.6-39.1 3.5-3.1 7-6.3 10.5-9.7 4.4 4.3 9 8.4 13.6 12.4 42.8 36.8 85.1 51.7 111.2 36.6 27-15.6 35.8-62.9 24.4-120.5-.9-4.4-1.9-8.9-3-13.5 3.2-.9 6.3-1.9 9.4-2.9 57.7-19.1 99.5-50 99.5-81.7 0-30.3-39.4-59.7-93.8-78.4zM282.9 92.3c37.2-32.4 71.9-45.1 87.7-36 16.9 9.7 23.4 48.9 12.8 100.4-.7 3.4-1.4 6.7-2.3 10-22.2-5-44.7-8.6-67.3-10.6-13-18.6-27.2-36.4-42.6-53.1 3.9-3.7 7.7-7.2 11.7-10.7zM167.2 307.5c5.1 8.7 10.3 17.4 15.8 25.9-15.6-1.7-31.1-4.2-46.4-7.5 4.4-14.4 9.9-29.3 16.3-44.5 4.6 8.8 9.3 17.5 14.3 26.1zm-30.3-120.3c14.4-3.2 29.7-5.8 45.6-7.8-5.3 8.3-10.5 16.8-15.4 25.4-4.9 8.5-9.7 17.2-14.2 26-6.3-14.9-11.6-29.5-16-43.6zm27.4 68.9c6.6-13.8 13.8-27.3 21.4-40.6s15.8-26.2 24.4-38.9c15-1.1 30.3-1.7 45.9-1.7s31 .6 45.9 1.7c8.5 12.6 16.6 25.5 24.3 38.7s14.9 26.7 21.7 40.4c-6.7 13.8-13.9 27.4-21.6 40.8-7.6 13.3-15.7 26.2-24.2 39-14.9 1.1-30.4 1.6-46.1 1.6s-30.9-.5-45.6-1.4c-8.7-12.7-16.9-25.7-24.6-39s-14.8-26.8-21.5-40.6zm180.6 51.2c5.1-8.8 9.9-17.7 14.6-26.7 6.4 14.5 12 29.2 16.9 44.3-15.5 3.5-31.2 6.2-47 8 5.4-8.4 10.5-17 15.5-25.6zm14.4-76.5c-4.7-8.8-9.5-17.6-14.5-26.2-4.9-8.5-10-16.9-15.3-25.2 16.1 2 31.5 4.7 45.9 8-4.6 14.8-10 29.2-16.1 43.4zM256.2 118.3c10.5 11.4 20.4 23.4 29.6 35.8-19.8-.9-39.7-.9-59.5 0 9.8-12.9 19.9-24.9 29.9-35.8zM140.2 57c16.8-9.8 54.1 4.2 93.4 39 2.5 2.2 5 4.6 7.6 7-15.5 16.7-29.8 34.5-42.9 53.1-22.6 2-45 5.5-67.2 10.4-1.3-5.1-2.4-10.3-3.5-15.5-9.4-48.4-3.2-84.9 12.6-94zm-24.5 263.6c-4.2-1.2-8.3-2.5-12.4-3.9-21.3-6.7-45.5-17.3-63-31.2-10.1-7-16.9-17.8-18.8-29.9 0-18.3 31.6-41.7 77.2-57.6 5.7-2 11.5-3.8 17.3-5.5 6.8 21.7 15 43 24.5 63.6-9.6 20.9-17.9 42.5-24.8 64.5zm116.6 98c-16.5 15.1-35.6 27.1-56.4 35.3-11.1 5.3-23.9 5.8-35.3 1.3-15.9-9.2-22.5-44.5-13.5-92 1.1-5.6 2.3-11.2 3.7-16.7 22.4 4.8 45 8.1 67.9 9.8 13.2 18.7 27.7 36.6 43.2 53.4-3.2 3.1-6.4 6.1-9.6 8.9zm24.5-24.3c-10.2-11-20.4-23.2-30.3-36.3 9.6.4 19.5.6 29.5.6 10.3 0 20.4-.2 30.4-.7-9.2 12.7-19.1 24.8-29.6 36.4zm130.7 30c-.9 12.2-6.9 23.6-16.5 31.3-15.9 9.2-49.8-2.8-86.4-34.2-4.2-3.6-8.4-7.5-12.7-11.5 15.3-16.9 29.4-34.8 42.2-53.6 22.9-1.9 45.7-5.4 68.2-10.5 1 4.1 1.9 8.2 2.7 12.2 4.9 21.6 5.7 44.1 2.5 66.3zm18.2-107.5c-2.8.9-5.6 1.8-8.5 2.6-7-21.8-15.6-43.1-25.5-63.8 9.6-20.4 17.7-41.4 24.5-62.9 5.2 1.5 10.2 3.1 15 4.7 46.6 16 79.3 39.8 79.3 58 0 19.6-34.9 44.9-84.8 61.4zm-149.7-15c25.3 0 45.8-20.5 45.8-45.8s-20.5-45.8-45.8-45.8c-25.3 0-45.8 20.5-45.8 45.8s20.5 45.8 45.8 45.8z"></path>
+                                    </svg>
+                                 </span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+                  <a class="relative mx-auto flex h-[13rem] w-full max-w-full flex-col items-start border border-black/[0.2] p-4 dark:border-white/[0.2]" href="https://nextjs.org/">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute -left-3 -top-3 size-6 text-black dark:text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"></path>
+                     </svg>
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute -bottom-3 -left-3 size-6 text-black dark:text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"></path>
+                     </svg>
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute -right-3 -top-3 size-6 text-black dark:text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"></path>
+                     </svg>
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute -bottom-3 -right-3 size-6 text-black dark:text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"></path>
+                     </svg>
+                     <div class="p-0.5 bg-transparent aspect-square flex items-center justify-center w-full h-full relative">
+                        <div class="group/card relative flex size-full items-center justify-center overflow-hidden rounded-3xl bg-transparent">
+                           <div class="pointer-events-none">
+                              <div class="absolute inset-0 rounded-2xl  [mask-image:linear-gradient(white,transparent)] group-hover/card:opacity-50"></div>
+                              <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-green-500 to-blue-700 opacity-0  backdrop-blur-xl transition duration-500 group-hover/card:opacity-100" style="mask-image:radial-gradient(250px at 0px 0px, white, transparent);-webkit-mask-image:radial-gradient(250px at 0px 0px, white, transparent)"></div>
+                              <div class="absolute inset-0 rounded-2xl opacity-0 mix-blend-overlay  group-hover/card:opacity-100" style="mask-image:radial-gradient(250px at 0px 0px, white, transparent);-webkit-mask-image:radial-gradient(250px at 0px 0px, white, transparent)">
+                                 <p class="absolute inset-x-0 h-full whitespace-pre-wrap break-words font-mono text-xs font-bold text-white transition duration-500">MKnVN7nz6mABTcgBLap1A7GjhPu2exQWqxAOR6D88HQMIaTuCeCHDjZb1rnq2njgphg8eBZacpr1zRJVRpvAJoVma8LT3M145sreiuoXvASaYb85ei2o0rQf1tBcZt35SXvy311GMwjVuEMTU5DRRlepBxdI799d0Vo5Eq7qhRohzg5a4MlvSo12aZLbUos3HFbwj3msnKZyeBVg7uW1Ji0GEMng9YumZFJ52HNzsFJvh9o30x8WWu66wINDRuMbKZ2wMJvgJLA9AtqgyNUJ5XUd9AyBJg18WhzHKh9yVLp7KWSZjewCtnvl7fgYxb71CoPiMRtbxrz9JsAcFZhAKHvB2UfNcywW8wQvWoh6OgBlSzDd7MptaS35kckaPctIE0qbFa9s8UeFjZlt6tETHtBOsLbLJdEodYYMkpZyaSgbQ5eozF0jcZ6aSqSMGxekXq9jOdD2PKSribKxWmQW0ph9ptLOiiUCjXozIWUIPqUB6QIMFlebaZhKyGqA0xewDuS871GIIM2zdFrjoTF8y7xXSlThClJcFH4SvgeF7kOOzIwuUykFUUsFjMERNsxIfY3Mjciz6fX4WvzFywO9Rmo084fuAtmcAQZi8vaebUtkld9pfSmpwADRboVpqI9vGwTvxmCB6RjFgcICp9bWzETth6pSjwGoLs5KaKNsXdwt70Yly4uwsCs1lVX7NYA04Vhg8IKcH11gvpu1QknnyDSVYNzSRzslIRiBoIZL5Jfnm4AQHxyacGK3sGh0A9fACIHDuHhwtGDRiXtl2BVjJn7x6H9uRkUqHpE25f6wIAZNnzTMKSkBoUHNM8X14zW0SCxGKlflfplbAF2gT3ZdCjHD8DfsdOOKSnO29jLGKV2XL3cuqxVSul404O30QqFTXDKdIerVpk2Ki7QlWDNLkLpnXN2dvqsNrCxLvPGeI7k4Ed9dGChj5Df2ka4lJZ42rB4e6cDhVGEhfKzPGCfrXSTVFnoI2JurGGBazgYfTfkFq6ygo1CdDvEiE9n3ROalgTzBkuptcasbi1Hp0K1wLeouIUrmvvKfgybz24CysiHO0RVd8qEPhE717F1P7jgQfxtXXyVq5GNFizaKqC0ZoTb2A7Mxhov8guNsrFX5LPEZFlaO0LmBwWpqGJgsaOcdUJh4ZAtd90qJOorcdMVtZt7QBfpGxE4y7kVbnz0jwJZfgL4pFfLXcZc8vydvLOp962oDIDldbE8T3G68ic9DnMR1RIKXB1ak9vaXCmtOLkT1VDXntvO4jv80c04CwWD17xwbXajraV4SMZlGZbm5K1wRTRZSoVMwuL5Jlg0wYasynx3o2wb6gwDYHaRd0lc6a7XnW0SYZKegrdHOwXJIrpJRgKxfaM6Jywb8S54cwzAEyPjo2SmcsC2M4UEg1Zb4Jk3NnG1rWkMDE2tR00ehAli3vIJ8jen6H8uEEj6a0Uz3019HMCTXVhKBoLRMHT1hKo1c9o1M7P0evpihWRZQJfx4fTEu</p>
+                              </div>
+                           </div>
+                           <div class="relative z-10 flex items-center justify-center">
+                              <div class="relative flex size-44 flex-col  items-center justify-center rounded-full text-4xl font-bold text-white">
+                                 <div class="absolute size-full rounded-full bg-white/[0.8] blur-sm dark:bg-black/[0.8]"></div>
+                                 <span class="z-20 whitespace-nowrap text-black dark:text-white">Next.js</span>
+                                 <span class="z-20 mt-4 whitespace-nowrap text-black dark:text-white">
+                                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                       <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                       <path d="M9 15v-6l7.745 10.65a9 9 0 1 1 2.255 -1.993"></path>
+                                       <path d="M15 12v-3"></path>
+                                    </svg>
+                                 </span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+                  <a class="relative mx-auto flex h-[13rem] w-full max-w-full flex-col items-start border border-black/[0.2] p-4 dark:border-white/[0.2]" href="https://tailwindcss.com/">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute -left-3 -top-3 size-6 text-black dark:text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"></path>
+                     </svg>
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute -bottom-3 -left-3 size-6 text-black dark:text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"></path>
+                     </svg>
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute -right-3 -top-3 size-6 text-black dark:text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"></path>
+                     </svg>
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute -bottom-3 -right-3 size-6 text-black dark:text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"></path>
+                     </svg>
+                     <div class="p-0.5 bg-transparent aspect-square flex items-center justify-center w-full h-full relative">
+                        <div class="group/card relative flex size-full items-center justify-center overflow-hidden rounded-3xl bg-transparent">
+                           <div class="pointer-events-none">
+                              <div class="absolute inset-0 rounded-2xl  [mask-image:linear-gradient(white,transparent)] group-hover/card:opacity-50"></div>
+                              <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-green-500 to-blue-700 opacity-0  backdrop-blur-xl transition duration-500 group-hover/card:opacity-100" style="mask-image:radial-gradient(250px at 0px 0px, white, transparent);-webkit-mask-image:radial-gradient(250px at 0px 0px, white, transparent)"></div>
+                              <div class="absolute inset-0 rounded-2xl opacity-0 mix-blend-overlay  group-hover/card:opacity-100" style="mask-image:radial-gradient(250px at 0px 0px, white, transparent);-webkit-mask-image:radial-gradient(250px at 0px 0px, white, transparent)">
+                                 <p class="absolute inset-x-0 h-full whitespace-pre-wrap break-words font-mono text-xs font-bold text-white transition duration-500">Bsz40Gbjjmv9BiSYytgRSR1dYZZuQVkkvtLwG9vp9JcPdcRwP4lvKGQLf6wTQHfQXv4BYySqV7FDqyAt6taEmMHdrshcyenpynEMoe4TFmstM9DOf0BWjpwACtVItMooQkSk8rQPbWE31n48aKpMdDkHKxSzGxj5HX2vP2LupfykFPMUMoLYMuHAQdFXk40DIg7oVBt2kgtk8cNk99Er3CoxJVmU52uMqdkZK6X9KGcHWlCrcsPzagFBPMA25m6i6mzIHMO3Aty8doM30oY341S4Lp2zbIX2TbgzvZ0rQqNj19Z6ltdFwfApQZETDxnT67V5iB5kDPzar2KA6kyfFKdLKCYk5RvG4JPnfPfRj8o4vUGb8XK1hgjw5WEtMmzaD5DHQy1auSYBEJo7pUwZXoiXyDnZDbZUNRJSEFJTVxJYyHUOyPnpg82fSDrKd511XNADwIB9bMkNPYOGlmiL7WvtLsSxK3cNM6W3RceDMqGXzcNkEavK89fVWkaYYX9OXbUx2nL0K6mHkbeGiYzBPEFXZAZQIATSplPQWsflWyLVU677hqrPTQPctXyRhEAxGXOEuED9lg2zWtaH8PFrjFmQa3os2jxddCnDPLbl55K7sdv0J0swig2ftoIxJkydMeg1Ni928DfnIXteqwqsgn4CQLYCYKRkfLmu5XG710JN7BxlyKlZIeO28yAYsDeYFxKNmHXXSQC1mwWzXNGnWVrE4aglInMR0pbPmuUcAx3mINChPTdgS7P7xGOUSn4gAYkU39JImNhPiNVfd74ErpgtEBFdh4LYihzfGQbdtaPQvCwqd1tR6hLk3cyli000zDDjNz1BXNVY0paBJea68EIVlzUOAEXdFegkDxMz43gvrweHT3r7LuALGxK2Uoce1lLLBgs0375cqVefiycvVDOnyvi1p4TPoNA5gtM2q0wZvn8EO3ZhafOTJlqxwxoBjDpHd6VAmr8VlDxT6S4tzMTKLmXOnaro1adHiasE81GMfwRDnHgoXx2wXdFRDeGgYQYzqGei0itHs86fn70tHUSAEyXhCcVHEsYdGVZ60ewMnJJ1afQ7sob6jYceodGjS0UAwZAWdLNiLZsbtv7BBmRVSUmdfEwUj6f9flyEb1BzoCktegpX2Jw5mDKVluHDu6aIXck1KrthqYAG6OjwqN3ASxSrueCxNhAwW6J923wpakogkxNQjImzmdG75biofN82rkwz5U3vyUAkPmvz8nod7uTVJK9gppkhPfrrN5S3YJdTKE02yfzgrfh4WbHhAxm6DBZLnrNVwXy3Kkn1h3yI0F7umG9ZlarxobBoMkNVCs59y2Ka336ACUFwANsADSs1VuIwsJvm6lugx8VW7kR2AFJK5rtI3Z935HefqM79yOPJGJVtjBKxUjOgVOKhLT7JxzEl0X2wXErKxV9WVsyUuiR3FfPPPKftN9jvvwcxw0HPuCxcBxv2CqBzdl5E0oA78W2lQC9YPk7zjVd1hAmoE1YJ</p>
+                              </div>
+                           </div>
+                           <div class="relative z-10 flex items-center justify-center">
+                              <div class="relative flex size-44 flex-col  items-center justify-center rounded-full text-4xl font-bold text-white">
+                                 <div class="absolute size-full rounded-full bg-white/[0.8] blur-sm dark:bg-black/[0.8]"></div>
+                                 <span class="z-20 whitespace-nowrap text-black dark:text-white">Tailwind</span>
+                                 <span class="z-20 mt-4 whitespace-nowrap text-black dark:text-white">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"></path>
+                                    </svg>
+                                 </span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+                  <a class="relative mx-auto flex h-[13rem] w-full max-w-full flex-col items-start border border-black/[0.2] p-4 dark:border-white/[0.2]" href="https://www.oracle.com/java/">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute -left-3 -top-3 size-6 text-black dark:text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"></path>
+                     </svg>
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute -bottom-3 -left-3 size-6 text-black dark:text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"></path>
+                     </svg>
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute -right-3 -top-3 size-6 text-black dark:text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"></path>
+                     </svg>
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute -bottom-3 -right-3 size-6 text-black dark:text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"></path>
+                     </svg>
+                     <div class="p-0.5 bg-transparent aspect-square flex items-center justify-center w-full h-full relative">
+                        <div class="group/card relative flex size-full items-center justify-center overflow-hidden rounded-3xl bg-transparent">
+                           <div class="pointer-events-none">
+                              <div class="absolute inset-0 rounded-2xl  [mask-image:linear-gradient(white,transparent)] group-hover/card:opacity-50"></div>
+                              <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-green-500 to-blue-700 opacity-0  backdrop-blur-xl transition duration-500 group-hover/card:opacity-100" style="mask-image:radial-gradient(250px at 0px 0px, white, transparent);-webkit-mask-image:radial-gradient(250px at 0px 0px, white, transparent)"></div>
+                              <div class="absolute inset-0 rounded-2xl opacity-0 mix-blend-overlay  group-hover/card:opacity-100" style="mask-image:radial-gradient(250px at 0px 0px, white, transparent);-webkit-mask-image:radial-gradient(250px at 0px 0px, white, transparent)">
+                                 <p class="absolute inset-x-0 h-full whitespace-pre-wrap break-words font-mono text-xs font-bold text-white transition duration-500">4rTtu9JRPSKosONkFyl6rb6K9CSONPeOItx9k4KLkPxWKw5s41n1qOSPF0jztVWZ2z7bf3vNrhQ4qciOeQBOPgVirgcDdzgMyPykWVkmjaBTPcSHq73bBaFnJLWMEIcq5YijT9kYSFFJaeofYNOcA05bt4nw4z2pwPRhT7cimtfTn9kKgjHdcuiaRpUTy3ZX7hGMVp2kGTxfR6OGJ5DLHOzN6QLYGfkPwCmfbrrNtCJwCBUFtYGEefsfpc94muDGodRjK2qIk84ODGNoWafc6mEaFkioZ7ZQhmSpZq6n5U39vk3nbEDecVK6hDKm1lM4KRngJiXJbiJlC9JhEYISLONvl5tRnrGjQQsHlkf4gA9JLWTzWnFB758jLHya0oA4Z8xE07OT6kIv8mNfZN5bExIX03GdcvGtBJBZWKGu4KasXFOH4GZOh0unSkUFcZ7P6afY1zTYo2cjMs8sgNNvbpJEDFKUuSWnJE70UsEh0j1GdCwzO6g11pDn2PhTxkOIGoD8hU49Ap6G6b0cVgtW3Mik3XNEupmC2UYMi4ke3VAKu7cSq2GEMYbGEVYw1jHjsB8V3FFLjLAnB5302wDIxtkUdOBJVxOppOvkLNFHKYWSU7ZPl6YEbI6tI5iRCme5yt3sCcurXMqb8JdzHt6TiUN2L3x1hTTWTZsttQ2LZKTJiQ1smPT3kP22JiZHKQVoZkUZBoT42yo8iXu62O3vfShTwl1vDMABP0rbKccZpjyX1c8gvUbVYowjLzPFfIWBBg0eGjGgooLakeqZHqEc4CkLheRJjuNjZkIi5KC1tv8fE4b1BrYH5Q8GVTzwBlSBTjthAM1ezsdafggiixgpSs2NYlfMPn9qyrRlN5lrmloEc9t6HHKrPG1j1WQ8GKb1yVhLMwi9TPtoOIC2YuBxcUmBAO79wCQj8VfgxPIY7Qxl75tDElOOOCFB75zLQrwMa5aYGDqQWck9zlJbqR6ltZpa8bZ2sFO2A3MAFEnhEgXpfTafGLRLEhyRDmhsvtX3LF06YB4h82AyKjBIZHE7fGFOcMQhPBsciFidHMLpAoPfH6uyU5HfadYi4XN0Ronxs3Jv8okYQu0Q1ZFflMejPB0GGcLMa4XtKQsAFe0vwRCmX9wKvJU90FyjH9lNaccjdE7suWevfci40JcV0gjoVoCuvdzIx5IFWBCUWApF7Gy6yp444Xdk8ws1EHju1MUOyPfPVFDRPS2o6qrdyrqHENUl0V4Qy1d7WFkbzJbcHk1lOqHfVyYnr7dOlKn9IduqVF5cKkkrYVTloRsE3RaRVAUzZB9dfa7CsmcA7h9dwLue760OgFUseRYr9ykBXIcIngUxivXFV6PWUhjqe2Cocn1EB2Zgny9USalX5of2zAt8CvKOmUMueqZXJKCOVYX3RI7CymBgscuczB3HR0GS5BMp3QW5pTZHzF2ZzjDLby7X7zbrnIrxbZIp4mRlwEPa1J3JJRYqNYAhlGof7eZVJAzuUtvH</p>
+                              </div>
+                           </div>
+                           <div class="relative z-10 flex items-center justify-center">
+                              <div class="relative flex size-44 flex-col  items-center justify-center rounded-full text-4xl font-bold text-white">
+                                 <div class="absolute size-full rounded-full bg-white/[0.8] blur-sm dark:bg-black/[0.8]"></div>
+                                 <span class="z-20 whitespace-nowrap text-black dark:text-white">Java</span>
+                                 <span class="z-20 mt-4 whitespace-nowrap text-black dark:text-white">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 384 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M277.74 312.9c9.8-6.7 23.4-12.5 23.4-12.5s-38.7 7-77.2 10.2c-47.1 3.9-97.7 4.7-123.1 1.3-60.1-8 33-30.1 33-30.1s-36.1-2.4-80.6 19c-52.5 25.4 130 37 224.5 12.1zm-85.4-32.1c-19-42.7-83.1-80.2 0-145.8C296 53.2 242.84 0 242.84 0c21.5 84.5-75.6 110.1-110.7 162.6-23.9 35.9 11.7 74.4 60.2 118.2zm114.6-176.2c.1 0-175.2 43.8-91.5 140.2 24.7 28.4-6.5 54-6.5 54s62.7-32.4 33.9-72.9c-26.9-37.8-47.5-56.6 64.1-121.3zm-6.1 270.5a12.19 12.19 0 0 1-2 2.6c128.3-33.7 81.1-118.9 19.8-97.3a17.33 17.33 0 0 0-8.2 6.3 70.45 70.45 0 0 1 11-3c31-6.5 75.5 41.5-20.6 91.4zM348 437.4s14.5 11.9-15.9 21.2c-57.9 17.5-240.8 22.8-291.6.7-18.3-7.9 16-19 26.8-21.3 11.2-2.4 17.7-2 17.7-2-20.3-14.3-131.3 28.1-56.4 40.2C232.84 509.4 401 461.3 348 437.4zM124.44 396c-78.7 22 47.9 67.4 148.1 24.5a185.89 185.89 0 0 1-28.2-13.8c-44.7 8.5-65.4 9.1-106 4.5-33.5-3.8-13.9-15.2-13.9-15.2zm179.8 97.2c-78.7 14.8-175.8 13.1-233.3 3.6 0-.1 11.8 9.7 72.4 13.6 92.2 5.9 233.8-3.3 237.1-46.9 0 0-6.4 16.5-76.2 29.7zM260.64 353c-59.2 11.4-93.5 11.1-136.8 6.6-33.5-3.5-11.6-19.7-11.6-19.7-86.8 28.8 48.2 61.4 169.5 25.9a60.37 60.37 0 0 1-21.1-12.8z"></path>
+                                    </svg>
+                                 </span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+                  <a class="relative mx-auto flex h-[13rem] w-full max-w-full flex-col items-start border border-black/[0.2] p-4 dark:border-white/[0.2]" href="https://spring.io/projects/spring-boot">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute -left-3 -top-3 size-6 text-black dark:text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"></path>
+                     </svg>
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute -bottom-3 -left-3 size-6 text-black dark:text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"></path>
+                     </svg>
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute -right-3 -top-3 size-6 text-black dark:text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"></path>
+                     </svg>
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute -bottom-3 -right-3 size-6 text-black dark:text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"></path>
+                     </svg>
+                     <div class="p-0.5 bg-transparent aspect-square flex items-center justify-center w-full h-full relative">
+                        <div class="group/card relative flex size-full items-center justify-center overflow-hidden rounded-3xl bg-transparent">
+                           <div class="pointer-events-none">
+                              <div class="absolute inset-0 rounded-2xl  [mask-image:linear-gradient(white,transparent)] group-hover/card:opacity-50"></div>
+                              <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-green-500 to-blue-700 opacity-0  backdrop-blur-xl transition duration-500 group-hover/card:opacity-100" style="mask-image:radial-gradient(250px at 0px 0px, white, transparent);-webkit-mask-image:radial-gradient(250px at 0px 0px, white, transparent)"></div>
+                              <div class="absolute inset-0 rounded-2xl opacity-0 mix-blend-overlay  group-hover/card:opacity-100" style="mask-image:radial-gradient(250px at 0px 0px, white, transparent);-webkit-mask-image:radial-gradient(250px at 0px 0px, white, transparent)">
+                                 <p class="absolute inset-x-0 h-full whitespace-pre-wrap break-words font-mono text-xs font-bold text-white transition duration-500">C6HCKQwC02e7TG9EEN8I8zHMVDPqy4gLiVGYXlfn11dLQM7HBnZDehfrZ0m2Viwj0ibKxApYUtio7AWmtbpkbb4M6ICM8gNkELoUnY69aUnw3uUWNMlRMR8V7OTUyyp5Sr3uifZurmaCg0dHNXXvlHgmQQRBXl7GrP3d23gQZ6hgMwI9Ef4FxqtmzmdSz1DmrTReaLO3IckYitdABB7EpYpHovTF8Obx1nOWEjVyiu8vPkDWcct3YflNSr8FqprThdHlMU10Uz4D7qqgwaA4Xq0gSSILWf4oO0RELY63Qn787ELGSBzbvFbQg0Yeh4wFRzDV4LQvKR75H5I36ZxtQqMjEJcD0Ax8leWeVFyZcpSlrJOitnyrUWKRydcvSvGsvBoP9VCJmemIGStLm3cE7PC2gWrTNqMtH1h9thZ9acmkQJzdGFvMfQAaEs24RTPeWB4GzS6JOl2t8cZGISYBJmGXGgra27RfI1qHthrGPkL588UOd4bINrQWiLxyp0Um9hcjNAcsrMofUIX3C1XX1hgLnRbNw5rDxpKv2Og3boFetAwKRe92idwa8MWr6gBYipxuppPbs8h4MR1y7A6VaaIBskNiXCjLpX96d2QgMeqtaLguPBYMpKvqML7Jl6F3ceL8cAeMARCSmBPS7og9nnotBErUeJsnuPpAedmpBkTVb9RMH1RTDhZSDa4JbYkpesA9OZcTG4HZ4eLag19TYQp2xGv9k7iSCq3ClglCUz6LG0tZBPUisXmGqCOTrTxGDB7rrLs2ERw04YtSI8BJUAWeTVtTtQ3IgxsEl83EoA9jBK8ZbbYgbPe68qghtw3lSXCOO6t5wpqkxg6RsPcxvx0w4xzo7w56ljUASFKPMFfiZgBWCsCN34DgFS3momIkbBDE7bh3TYjQx2bLRhkDr9BTxrSTp8yEpNEyytZvz4aklqoScesTclGz9TzjHNU2JW1eEyIk6viOHTOjG3w2c2a3yXOTEZ4JgVaQiT0r4yMhyMj5cETGaE2gwQs6vY5DMHrreWxpwUaedZRagEP5EL4VeOTSKKE7P8TbpTPuOHUy44IWzeW5uwKPjt6ZCkBSvx05FGbW4u5yrBlX1leIaPCJNvJ3w5kWv5pPiLaihD1D7pctl9AhjiJUvKVI8jbAX12pbBujYgvUQNJBgL8lpL8OUs9IqW5nL7x89FOJESPL9wjTeKFvhi2BroVHCDt0zdNvV32iQU1HvapLIPuTPfujZU5w3PPFgsirjdnrBcvftVK3wNrJEKJTefo8TnWGlh2RjOyDKJ32V6X5nTRJQSKPAlZwdqSbLuc407exFkZuS4CkVBxQvhf0l6sRaJizYw7I1Zfnt7IG4LUuLaQA4ZTcHKVVUceUvjvlsdJowwTjbEhXsXeSy9SjbTf2fPUmaZi2t1A8QZdCVTtyuq8FdeWZVmDHuX3smeFVsLU349jb2TODCLUxv62iHZhvCpthVgf7F643RfseRczUGExPWzWEM1Dq</p>
+                              </div>
+                           </div>
+                           <div class="relative z-10 flex items-center justify-center">
+                              <div class="relative flex size-44 flex-col  items-center justify-center rounded-full text-4xl font-bold text-white">
+                                 <div class="absolute size-full rounded-full bg-white/[0.8] blur-sm dark:bg-black/[0.8]"></div>
+                                 <span class="z-20 whitespace-nowrap text-black dark:text-white">Spring Boot</span>
+                                 <span class="z-20 mt-4 whitespace-nowrap text-black dark:text-white">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                       <path d="m23.693 10.7058-4.73-8.1844c-.4094-.7106-1.4166-1.2942-2.2402-1.2942H7.2725c-.819 0-1.8308.5836-2.2402 1.2942L.307 10.7058c-.4095.7106-.4095 1.873 0 2.5837l4.7252 8.189c.4094.7107 1.4166 1.2943 2.2402 1.2943h9.455c.819 0 1.826-.5836 2.2402-1.2942l4.7252-8.189c.4095-.7107.4095-1.8732 0-2.5838zM10.9763 5.7547c0-.5365.4377-.9742.9742-.9742s.9742.4377.9742.9742v5.8217c0 .5366-.4377.9742-.9742.9742s-.9742-.4376-.9742-.9742zm.9742 12.4294c-3.6427 0-6.6077-2.965-6.6077-6.6077.0047-2.0896.993-4.0521 2.6685-5.304a.8657.8657 0 0 1 1.2142.1788.8657.8657 0 0 1-.1788 1.2143c-2.1602 1.6048-2.612 4.6592-1.0072 6.8194 1.6049 2.1603 4.6593 2.612 6.8195 1.0072 1.2378-.9177 1.9673-2.372 1.9673-3.9157a4.8972 4.8972 0 0 0-1.9861-3.925c-.386-.2824-.466-.8284-.1836-1.2143.2824-.386.8283-.466 1.2143-.1835 1.6895 1.2471 2.6826 3.2238 2.6873 5.3228 0 3.6474-2.965 6.6077-6.6077 6.6077z"></path>
+                                    </svg>
+                                 </span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+                  <a class="relative mx-auto flex h-[13rem] w-full max-w-full flex-col items-start border border-black/[0.2] p-4 dark:border-white/[0.2]" href="https://www.postgresql.org/">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute -left-3 -top-3 size-6 text-black dark:text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"></path>
+                     </svg>
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute -bottom-3 -left-3 size-6 text-black dark:text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"></path>
+                     </svg>
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute -right-3 -top-3 size-6 text-black dark:text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"></path>
+                     </svg>
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute -bottom-3 -right-3 size-6 text-black dark:text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"></path>
+                     </svg>
+                     <div class="p-0.5 bg-transparent aspect-square flex items-center justify-center w-full h-full relative">
+                        <div class="group/card relative flex size-full items-center justify-center overflow-hidden rounded-3xl bg-transparent">
+                           <div class="pointer-events-none">
+                              <div class="absolute inset-0 rounded-2xl  [mask-image:linear-gradient(white,transparent)] group-hover/card:opacity-50"></div>
+                              <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-green-500 to-blue-700 opacity-0  backdrop-blur-xl transition duration-500 group-hover/card:opacity-100" style="mask-image:radial-gradient(250px at 0px 0px, white, transparent);-webkit-mask-image:radial-gradient(250px at 0px 0px, white, transparent)"></div>
+                              <div class="absolute inset-0 rounded-2xl opacity-0 mix-blend-overlay  group-hover/card:opacity-100" style="mask-image:radial-gradient(250px at 0px 0px, white, transparent);-webkit-mask-image:radial-gradient(250px at 0px 0px, white, transparent)">
+                                 <p class="absolute inset-x-0 h-full whitespace-pre-wrap break-words font-mono text-xs font-bold text-white transition duration-500">28VsMFKkEwsxWIogFmPVIe2kGRgcEj2HE5V9EYIhA8SmBwr5OEHQ6x2G5WBYp4BmHLxlUrSXSd8itkWiSCzaRvgrOAzN6PnVZwF7b7i4kwKUJkiMJ5KkvS6ppwQ2ne3RLdimzYIsrPf59mHp1T9Qccvcqw231SkJrdc0NG7b387d5QAWDNUxnLia0ovPOmKH5wC9aTDlmxQrEytz81vYdAHBuugwmFXxGwJBbnpgLw3SuzXKdLgk2mGZwBfDWRZXfRfofenSIOWqQFL9H3zb5HoPhg1Wveem6YP4AjMvIcEJs0OnJIrAkIQoOog1kcVfF8eIWAtnu61xyDOzThh2pBS7gzBUpVlLzeeqhYMC2I0FVyL9rVHLRjTw4Og5Xh6yeGz4JyCl4mrHkFcklhVPWphhd3FgoFZyWToSbHnmF7U9MDH8hHTqAPrMPQiGXFNAo7bOEdvfDu0MzSAmgX3GB8bDAsWUA6Lb4dQk6Hm5fSsQ6okRmZahFvECK5pLuSQvWEFkvHnk4qflyPj0NYUI1Qw07yl9pKcmln5VMLCxfgrWZIMwApCgP5lRBrLWd1uZJZZoDTXd0YdXYvWojDJug3Ectv5AspHLcTL5wrKlOVfiiyO1iv4QIX1IgF3OuZ6JEKwRsllclKK1ka8RRCpDkvwgoiTGRJllcCUXK4UKUNouPtLSE7dPk3LkFp8WnkgW2r9olHKpXvFFkmWTcqdfHII886PgFLsCbWXrcb1BzXO1ChUMJp2njzf7xaJpiRH6fLgkuTYGgkkk7GrwfXQi4QDrdYRruW15qV8Zi48tqlRVVbMsGG7ScvG96IyfoApisvqSo0owuM9j0wcMUgECGnYWePn5ArTzYUy8WxvoHDqp3oqXJXfnYCGxtuiqycrrqlIQ1wGozlsE6OP01XAgMZb8EVdgSbrlBSpB9giyBGmmvmc8tUttbfe22BKmPwMcvDannNgdmzgZYW0437k8ifoYlB3y9tqaB74VUxHD9PHGiVEvDG8OwtuOcPtPw3vx9Wz67FhpXG68fX6CxAK5w4TK7i9LmmLktGnEjCn4X6OVowHcmePCgpFOBTnhmQZZcQwYRggAHvwP9NWw1TgovLf1bvSiZBxv1P2hSaOtmt0RhNXzvbxg86PnjJhXgOg76Bte9im23xFMaDVQ76I2tPnvx0dS3rGIGk4J9ZJFeenw42t3N1e5ydq3z2F73eNverZGWQgk6xOLpLatl9H4VJzi3xR8vd1jyubOt9vIAR4auwoUT5G41wclJy3Ct6sIYvguRkSpbFdymZOqTfdhG2Q82UuKpr4zdP8YWcqdc2A64BqnCboDbflIC6aHhsYq0KjRxAc5LTmsK9VvNeXk5I9vUpwPutTPUOGZONnBkIZV9sRiyGeOpsHX2mmkGU4FaFpqI5RiBTtgv4ARHDnnZYuvToOPGb1ivqlEleGhb5LZ6clYgB3mNSjm0c3OUTjg3LK2hWyY64w7MGiZakCau4nuXKfs</p>
+                              </div>
+                           </div>
+                           <div class="relative z-10 flex items-center justify-center">
+                              <div class="relative flex size-44 flex-col  items-center justify-center rounded-full text-4xl font-bold text-white">
+                                 <div class="absolute size-full rounded-full bg-white/[0.8] blur-sm dark:bg-black/[0.8]"></div>
+                                 <span class="z-20 whitespace-nowrap text-black dark:text-white">PostgreSQL</span>
+                                 <span class="z-20 mt-4 whitespace-nowrap text-black dark:text-white">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M23.5594 14.7228a.5269.5269 0 0 0-.0563-.1191c-.139-.2632-.4768-.3418-1.0074-.2321-1.6533.3411-2.2935.1312-2.5256-.0191 1.342-2.0482 2.445-4.522 3.0411-6.8297.2714-1.0507.7982-3.5237.1222-4.7316a1.5641 1.5641 0 0 0-.1509-.235C21.6931.9086 19.8007.0248 17.5099.0005c-1.4947-.0158-2.7705.3461-3.1161.4794a9.449 9.449 0 0 0-.5159-.0816 8.044 8.044 0 0 0-1.3114-.1278c-1.1822-.0184-2.2038.2642-3.0498.8406-.8573-.3211-4.7888-1.645-7.2219.0788C.9359 2.1526.3086 3.8733.4302 6.3043c.0409.818.5069 3.334 1.2423 5.7436.4598 1.5065.9387 2.7019 1.4334 3.582.553.9942 1.1259 1.5933 1.7143 1.7895.4474.1491 1.1327.1441 1.8581-.7279.8012-.9635 1.5903-1.8258 1.9446-2.2069.4351.2355.9064.3625 1.39.3772a.0569.0569 0 0 0 .0004.0041 11.0312 11.0312 0 0 0-.2472.3054c-.3389.4302-.4094.5197-1.5002.7443-.3102.064-1.1344.2339-1.1464.8115-.0025.1224.0329.2309.0919.3268.2269.4231.9216.6097 1.015.6331 1.3345.3335 2.5044.092 3.3714-.6787-.017 2.231.0775 4.4174.3454 5.0874.2212.5529.7618 1.9045 2.4692 1.9043.2505 0 .5263-.0291.8296-.0941 1.7819-.3821 2.5557-1.1696 2.855-2.9059.1503-.8707.4016-2.8753.5388-4.1012.0169-.0703.0357-.1207.057-.1362.0007-.0005.0697-.0471.4272.0307a.3673.3673 0 0 0 .0443.0068l.2539.0223.0149.001c.8468.0384 1.9114-.1426 2.5312-.4308.6438-.2988 1.8057-1.0323 1.5951-1.6698zM2.371 11.8765c-.7435-2.4358-1.1779-4.8851-1.2123-5.5719-.1086-2.1714.4171-3.6829 1.5623-4.4927 1.8367-1.2986 4.8398-.5408 6.108-.13-.0032.0032-.0066.0061-.0098.0094-2.0238 2.044-1.9758 5.536-1.9708 5.7495-.0002.0823.0066.1989.0162.3593.0348.5873.0996 1.6804-.0735 2.9184-.1609 1.1504.1937 2.2764.9728 3.0892.0806.0841.1648.1631.2518.2374-.3468.3714-1.1004 1.1926-1.9025 2.1576-.5677.6825-.9597.5517-1.0886.5087-.3919-.1307-.813-.5871-1.2381-1.3223-.4796-.839-.9635-2.0317-1.4155-3.5126zm6.0072 5.0871c-.1711-.0428-.3271-.1132-.4322-.1772.0889-.0394.2374-.0902.4833-.1409 1.2833-.2641 1.4815-.4506 1.9143-1.0002.0992-.126.2116-.2687.3673-.4426a.3549.3549 0 0 0 .0737-.1298c.1708-.1513.2724-.1099.4369-.0417.156.0646.3078.26.3695.4752.0291.1016.0619.2945-.0452.4444-.9043 1.2658-2.2216 1.2494-3.1676 1.0128zm2.094-3.988-.0525.141c-.133.3566-.2567.6881-.3334 1.003-.6674-.0021-1.3168-.2872-1.8105-.8024-.6279-.6551-.9131-1.5664-.7825-2.5004.1828-1.3079.1153-2.4468.079-3.0586-.005-.0857-.0095-.1607-.0122-.2199.2957-.2621 1.6659-.9962 2.6429-.7724.4459.1022.7176.4057.8305.928.5846 2.7038.0774 3.8307-.3302 4.7363-.084.1866-.1633.3629-.2311.5454zm7.3637 4.5725c-.0169.1768-.0358.376-.0618.5959l-.146.4383a.3547.3547 0 0 0-.0182.1077c-.0059.4747-.054.6489-.115.8693-.0634.2292-.1353.4891-.1794 1.0575-.11 1.4143-.8782 2.2267-2.4172 2.5565-1.5155.3251-1.7843-.4968-2.0212-1.2217a6.5824 6.5824 0 0 0-.0769-.2266c-.2154-.5858-.1911-1.4119-.1574-2.5551.0165-.5612-.0249-1.9013-.3302-2.6462.0044-.2932.0106-.5909.019-.8918a.3529.3529 0 0 0-.0153-.1126 1.4927 1.4927 0 0 0-.0439-.208c-.1226-.4283-.4213-.7866-.7797-.9351-.1424-.059-.4038-.1672-.7178-.0869.067-.276.1831-.5875.309-.9249l.0529-.142c.0595-.16.134-.3257.213-.5012.4265-.9476 1.0106-2.2453.3766-5.1772-.2374-1.0981-1.0304-1.6343-2.2324-1.5098-.7207.0746-1.3799.3654-1.7088.5321a5.6716 5.6716 0 0 0-.1958.1041c.0918-1.1064.4386-3.1741 1.7357-4.4823a4.0306 4.0306 0 0 1 .3033-.276.3532.3532 0 0 0 .1447-.0644c.7524-.5706 1.6945-.8506 2.802-.8325.4091.0067.8017.0339 1.1742.081 1.939.3544 3.2439 1.4468 4.0359 2.3827.8143.9623 1.2552 1.9315 1.4312 2.4543-1.3232-.1346-2.2234.1268-2.6797.779-.9926 1.4189.543 4.1729 1.2811 5.4964.1353.2426.2522.4522.2889.5413.2403.5825.5515.9713.7787 1.2552.0696.087.1372.1714.1885.245-.4008.1155-1.1208.3825-1.0552 1.717-.0123.1563-.0423.4469-.0834.8148-.0461.2077-.0702.4603-.0994.7662zm.8905-1.6211c-.0405-.8316.2691-.9185.5967-1.0105a2.8566 2.8566 0 0 0 .135-.0406 1.202 1.202 0 0 0 .1342.103c.5703.3765 1.5823.4213 3.0068.1344-.2016.1769-.5189.3994-.9533.6011-.4098.1903-1.0957.333-1.7473.3636-.7197.0336-1.0859-.0807-1.1721-.151zm.5695-9.2712c-.0059.3508-.0542.6692-.1054 1.0017-.055.3576-.112.7274-.1264 1.1762-.0142.4368.0404.8909.0932 1.3301.1066.887.216 1.8003-.2075 2.7014a3.5272 3.5272 0 0 1-.1876-.3856c-.0527-.1276-.1669-.3326-.3251-.6162-.6156-1.1041-2.0574-3.6896-1.3193-4.7446.3795-.5427 1.3408-.5661 2.1781-.463zm.2284 7.0137a12.3762 12.3762 0 0 0-.0853-.1074l-.0355-.0444c.7262-1.1995.5842-2.3862.4578-3.4385-.0519-.4318-.1009-.8396-.0885-1.2226.0129-.4061.0666-.7543.1185-1.0911.0639-.415.1288-.8443.1109-1.3505.0134-.0531.0188-.1158.0118-.1902-.0457-.4855-.5999-1.938-1.7294-3.253-.6076-.7073-1.4896-1.4972-2.6889-2.0395.5251-.1066 1.2328-.2035 2.0244-.1859 2.0515.0456 3.6746.8135 4.8242 2.2824a.908.908 0 0 1 .0667.1002c.7231 1.3556-.2762 6.2751-2.9867 10.5405zm-8.8166-6.1162c-.025.1794-.3089.4225-.6211.4225a.5821.5821 0 0 1-.0809-.0056c-.1873-.026-.3765-.144-.5059-.3156-.0458-.0605-.1203-.178-.1055-.2844.0055-.0401.0261-.0985.0925-.1488.1182-.0894.3518-.1226.6096-.0867.3163.0441.6426.1938.6113.4186zm7.9305-.4114c.0111.0792-.049.201-.1531.3102-.0683.0717-.212.1961-.4079.2232a.5456.5456 0 0 1-.075.0052c-.2935 0-.5414-.2344-.5607-.3717-.024-.1765.2641-.3106.5611-.352.297-.0414.6111.0088.6356.1851z"></path>
+                                    </svg>
+                                 </span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div id="projects" class="relative flex h-[270vh]  flex-col self-auto overflow-hidden pb-10 pt-40 antialiased [perspective:1000px] [transform-style:preserve-3d]">
+               <div class="relative left-0 top-0 mx-auto w-full max-w-5xl px-4  py-20 md:py-40">
+                  <h1 class="text-2xl font-bold dark:text-white md:text-7xl">Projects</h1>
+               </div>
+               <div style="opacity: 0.2; transform: translateY(-700px) rotateX(15deg) rotateZ(20deg) translateZ(0px);" class="">
+                  <div class="mb-20 flex flex-row-reverse space-x-20 space-x-reverse">
+                     <div style="transform: none;" class="group/product relative h-96 w-[40rem] shrink-0">
+                        <a class="block group-hover/product:shadow-2xl " href="">
+                           <img alt="Google Clone" loading="lazy" width="600" height="600" decoding="async" data-nimg="1" class="absolute inset-0 size-full object-cover object-center" style="color:transparent" srcset="/_next/dresscode.webp 1x, /_next/dresscode.webp 2x" src="./_next/dresscode.webp"></a>                        <div class="pointer-events-none absolute inset-0 size-full bg-black opacity-0 group-hover/product:opacity-80"></div>
+                        <h2 class="absolute bottom-4 left-4 text-white opacity-0 group-hover/product:opacity-100">Mern Memories</h2>
+                     </div>
+                     <div style="transform: none;" class="group/product relative h-96 w-[40rem] shrink-0">
+                        <a class="block group-hover/product:shadow-2xl " href="">
+                           <img alt="Google Clone" loading="lazy" width="600" height="600" decoding="async" data-nimg="1" class="absolute inset-0 size-full object-cover object-center" style="color:transparent" srcset="/_next/dresscode.webp 1x, /_next/dresscode.webp 2x" src="./_next/dresscode.webp"></a>                        <div class="pointer-events-none absolute inset-0 size-full bg-black opacity-0 group-hover/product:opacity-80"></div>
+                        <h2 class="absolute bottom-4 left-4 text-white opacity-0 group-hover/product:opacity-100">Next Event</h2>
+                     </div>
+                     <div style="transform: none;" class="group/product relative h-96 w-[40rem] shrink-0">
+                        <a class="block group-hover/product:shadow-2xl " href="">
+                           <img alt="Google Clone" loading="lazy" width="600" height="600" decoding="async" data-nimg="1" class="absolute inset-0 size-full object-cover object-center" style="color:transparent" srcset="/_next/dresscode.webp 1x, /_next/dresscode.webp 2x" src="./_next/dresscode.webp"></a>                        <div class="pointer-events-none absolute inset-0 size-full bg-black opacity-0 group-hover/product:opacity-80"></div>
+                        <h2 class="absolute bottom-4 left-4 text-white opacity-0 group-hover/product:opacity-100">Devspace</h2>
+                     </div>
+                  </div>
+                  <div class="mb-20 flex  flex-row space-x-20 ">
+                     <div style="transform: none;" class="group/product relative h-96 w-[40rem] shrink-0">
+                        <a class="block group-hover/product:shadow-2xl " href="">
+                           <img alt="Google Clone" loading="lazy" width="600" height="600" decoding="async" data-nimg="1" class="absolute inset-0 size-full object-cover object-center" style="color:transparent" srcset="/_next/dresscode.webp 1x, /_next/dresscode.webp 2x" src="./_next/dresscode.webp"></a>
+                        <div class="pointer-events-none absolute inset-0 size-full bg-black opacity-0 group-hover/product:opacity-80"></div>
+                        <h2 class="absolute bottom-4 left-4 text-white opacity-0 group-hover/product:opacity-100">Google Clone</h2>
+                     </div>
+                     <div style="transform: none;" class="group/product relative h-96 w-[40rem] shrink-0">
+                        <a class="block group-hover/product:shadow-2xl " href="">
+                           <img alt="Google Clone" loading="lazy" width="600" height="600" decoding="async" data-nimg="1" class="absolute inset-0 size-full object-cover object-center" style="color:transparent" srcset="/_next/dresscode.webp 1x, /_next/dresscode.webp 2x" src="./_next/dresscode.webp"></a>                        <div class="pointer-events-none absolute inset-0 size-full bg-black opacity-0 group-hover/product:opacity-80"></div>
+                        <h2 class="absolute bottom-4 left-4 text-white opacity-0 group-hover/product:opacity-100">Portfolio V1</h2>
+                     </div>
+                     <div style="transform: none;" class="group/product relative h-96 w-[40rem] shrink-0">
+                        <a class="block group-hover/product:shadow-2xl " href="">
+                           <img alt="Google Clone" loading="lazy" width="600" height="600" decoding="async" data-nimg="1" class="absolute inset-0 size-full object-cover object-center" style="color:transparent" srcset="/_next/dresscode.webp 1x, /_next/dresscode.webp 2x" src="./_next/dresscode.webp"></a>                        <div class="pointer-events-none absolute inset-0 size-full bg-black opacity-0 group-hover/product:opacity-80"></div>
+                        <h2 class="absolute bottom-4 left-4 text-white opacity-0 group-hover/product:opacity-100">Dresscode</h2>
+                     </div>
+                  </div>
+                  <div class="flex flex-row-reverse space-x-20 space-x-reverse">
+                     <div style="transform: none;" class="group/product relative h-96 w-[40rem] shrink-0">
+                        <a class="block group-hover/product:shadow-2xl " href="">
+                           <img alt="Google Clone" loading="lazy" width="600" height="600" decoding="async" data-nimg="1" class="absolute inset-0 size-full object-cover object-center" style="color:transparent" srcset="/_next/dresscode.webp 1x, /_next/dresscode.webp 2x" src="./_next/dresscode.webp"></a>                        <div class="pointer-events-none absolute inset-0 size-full bg-black opacity-0 group-hover/product:opacity-80"></div>
+                        <h2 class="absolute bottom-4 left-4 text-white opacity-0 group-hover/product:opacity-100">Portfolio V2</h2>
+                     </div>
+                     <div style="transform: none;" class="group/product relative h-96 w-[40rem] shrink-0">
+                        <a class="block group-hover/product:shadow-2xl " href="">
+                           <img alt="Google Clone" loading="lazy" width="600" height="600" decoding="async" data-nimg="1" class="absolute inset-0 size-full object-cover object-center" style="color:transparent" srcset="/_next/dresscode.webp 1x, /_next/dresscode.webp 2x" src="./_next/dresscode.webp"></a>                        <div class="pointer-events-none absolute inset-0 size-full bg-black opacity-0 group-hover/product:opacity-80"></div>
+                        <h2 class="absolute bottom-4 left-4 text-white opacity-0 group-hover/product:opacity-100">Music App</h2>
+                     </div>
+                     <div style="transform: none;" class="group/product relative h-96 w-[40rem] shrink-0">
+                        <a class="block group-hover/product:shadow-2xl " href="">
+                           <img alt="Google Clone" loading="lazy" width="600" height="600" decoding="async" data-nimg="1" class="absolute inset-0 size-full object-cover object-center" style="color:transparent" srcset="/_next/dresscode.webp 1x, /_next/dresscode.webp 2x" src="./_next/dresscode.webp"></a>                        <div class="pointer-events-none absolute inset-0 size-full bg-black opacity-0 group-hover/product:opacity-80"></div>
+                        <h2 class="absolute bottom-4 left-4 text-white opacity-0 group-hover/product:opacity-100">Artemis</h2>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div id="contact-me" class="mx-auto h-screen max-w-5xl px-8 py-20 md:py-32">
+               <h1 id="skills" class="pb-8 text-2xl font-bold dark:text-white md:text-7xl">Contact Me</h1>
+               <form class="max-w-xl space-y-8">
+                  <div class="space-y-2"><label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" for=":R1lnlf6ta:-form-item">Name</label><input class="flex h-10 w-full rounded-md border border-input dark:bg-neutral-950 px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" placeholder="John Doe" id=":R1lnlf6ta:-form-item" aria-describedby=":R1lnlf6ta:-form-item-description" aria-invalid="false" name="name" value=""></div>
+                  <div class="space-y-2"><label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" for=":R2lnlf6ta:-form-item">Email</label><input class="flex h-10 w-full rounded-md border border-input dark:bg-neutral-950 px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" placeholder="email@gmail.com" id=":R2lnlf6ta:-form-item" aria-describedby=":R2lnlf6ta:-form-item-description" aria-invalid="false" name="email" value=""></div>
+                  <div class="space-y-2"><label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" for=":R3lnlf6ta:-form-item">Message</label><textarea class="flex min-h-[80px] w-full rounded-md border border-input dark:bg-neutral-950 px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" rows="7" placeholder="Type your message here." name="message" id=":R3lnlf6ta:-form-item" aria-describedby=":R3lnlf6ta:-form-item-description" aria-invalid="false"></textarea></div>
+                  <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2" type="submit">Submit</button>
+               </form>
+            </div>
+         </main>
+      </div>
+      <script src="./_next/static/chunks/webpack-e084620823b38b0f.js" crossorigin="" async=""></script>
+        <script>
+            (self.__next_f = self.__next_f || []).push([0]);
+            self.__next_f.push([2, null]);
+        </script>
+        <script>
+            self.__next_f.push([1, '1:HL["/_next/static/media/2d141e1a38819612-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]\n2:HL["/_next/static/css/styles.css","style",{"crossOrigin":""}]\n0:"$L3"\n']);
+        </script>
+        <script>
+            self.__next_f.push([
+                1,
+                '4:I[9070,[],""]\n6:I[9132,["540","static/chunks/540-d2bfbae1ad721a10.js","685","static/chunks/685-b09341cde7e4eb19.js","837","static/chunks/837-fc6ca6b50a455951.js","608","static/chunks/app/(home)/page-ff985a9c43a204e1.js"],"LandingPage"]\n7:I[6258,["540","static/chunks/540-d2bfbae1ad721a10.js","685","static/chunks/685-b09341cde7e4eb19.js","837","static/chunks/837-fc6ca6b50a455951.js","608","static/chunks/app/(home)/page-ff985a9c43a204e1.js"],"ExperienceSection"]\n8:I[9914,["540","static/chunks/540-d2bfbae1ad7',
+            ]);
+        </script>
+        <script>
+            self.__next_f.push([
+                1,
+                '21a10.js","685","static/chunks/685-b09341cde7e4eb19.js","837","static/chunks/837-fc6ca6b50a455951.js","608","static/chunks/app/(home)/page-ff985a9c43a204e1.js"],""]\n9:I[8065,["540","static/chunks/540-d2bfbae1ad721a10.js","685","static/chunks/685-b09341cde7e4eb19.js","837","static/chunks/837-fc6ca6b50a455951.js","608","static/chunks/app/(home)/page-ff985a9c43a204e1.js"],"Icon"]\na:I[8065,["540","static/chunks/540-d2bfbae1ad721a10.js","685","static/chunks/685-b09341cde7e4eb19.js","837","static/chunks/837-fc6ca',
+            ]);
+        </script>
+        <script>
+            self.__next_f.push([
+                1,
+                '6b50a455951.js","608","static/chunks/app/(home)/page-ff985a9c43a204e1.js"],"EvervaultCard"]\ne:I[2334,["540","static/chunks/540-d2bfbae1ad721a10.js","685","static/chunks/685-b09341cde7e4eb19.js","837","static/chunks/837-fc6ca6b50a455951.js","608","static/chunks/app/(home)/page-ff985a9c43a204e1.js"],"HeroParallax"]\nf:I[4360,["540","static/chunks/540-d2bfbae1ad721a10.js","685","static/chunks/685-b09341cde7e4eb19.js","837","static/chunks/837-fc6ca6b50a455951.js","608","static/chunks/app/(home)/page-ff985a9c43a2',
+            ]);
+        </script>
+        <script>
+            self.__next_f.push([
+                1,
+                '04e1.js"],"ContactMeForm"]\n10:I[7060,["545","static/chunks/f923c8e2-4be1f9336337e375.js","540","static/chunks/540-d2bfbae1ad721a10.js","278","static/chunks/278-7e264b61f673be77.js","57","static/chunks/app/(home)/layout-889dd9a97a179d29.js"],"Navbar"]\n11:I[2070,[],""]\n12:I[8932,[],""]\n13:I[659,["685","static/chunks/685-b09341cde7e4eb19.js","185","static/chunks/app/layout-082bda90be3c6ed3.js"],"Analytics"]\n14:I[762,["685","static/chunks/685-b09341cde7e4eb19.js","185","static/chunks/app/layout-082bda90be3c6ed3',
+            ]);
+        </script>
+        <script>
+            self.__next_f.push([
+                1,
+                '.js"],"SpeedInsights"]\n15:I[2672,["685","static/chunks/685-b09341cde7e4eb19.js","185","static/chunks/app/layout-082bda90be3c6ed3.js"],"ThemeProvider"]\n1a:I[7521,["685","static/chunks/685-b09341cde7e4eb19.js","185","static/chunks/app/layout-082bda90be3c6ed3.js"],"Toaster"]\n1c:I[4357,[],""]\nb:Tb0c,',
+            ]);
+        </script>
+        <script>
+            self.__next_f.push([
+                1,
+                "M418.2 177.2c-5.4-1.8-10.8-3.5-16.2-5.1.9-3.7 1.7-7.4 2.5-11.1 12.3-59.6 4.2-107.5-23.1-123.3-26.3-15.1-69.2.6-112.6 38.4-4.3 3.7-8.5 7.6-12.5 11.5-2.7-2.6-5.5-5.2-8.3-7.7-45.5-40.4-91.1-57.4-118.4-41.5-26.2 15.2-34 60.3-23 116.7 1.1 5.6 2.3 11.1 3.7 16.7-6.4 1.8-12.7 3.8-18.6 5.9C38.3 196.2 0 225.4 0 255.6c0 31.2 40.8 62.5 96.3 81.5 4.5 1.5 9 3 13.6 4.3-1.5 6-2.8 11.9-4 18-10.5 55.5-2.3 99.5 23.9 114.6 27 15.6 72.4-.4 116.6-39.1 3.5-3.1 7-6.3 10.5-9.7 4.4 4.3 9 8.4 13.6 12.4 42.8 36.8 85.1 51.7 111.2 36.6 27-15.6 35.8-62.9 24.4-120.5-.9-4.4-1.9-8.9-3-13.5 3.2-.9 6.3-1.9 9.4-2.9 57.7-19.1 99.5-50 99.5-81.7 0-30.3-39.4-59.7-93.8-78.4zM282.9 92.3c37.2-32.4 71.9-45.1 87.7-36 16.9 9.7 23.4 48.9 12.8 100.4-.7 3.4-1.4 6.7-2.3 10-22.2-5-44.7-8.6-67.3-10.6-13-18.6-27.2-36.4-42.6-53.1 3.9-3.7 7.7-7.2 11.7-10.7zM167.2 307.5c5.1 8.7 10.3 17.4 15.8 25.9-15.6-1.7-31.1-4.2-46.4-7.5 4.4-14.4 9.9-29.3 16.3-44.5 4.6 8.8 9.3 17.5 14.3 26.1zm-30.3-120.3c14.4-3.2 29.7-5.8 45.6-7.8-5.3 8.3-10.5 16.8-15.4 25.4-4.9 8.5-9.7 17.2-14.2 26-6.3-14.9-11.6-29.5-16-43.6zm27.4 68.9c6.6-13.8 13.8-27.3 21.4-40.6s15.8-26.2 24.4-38.9c15-1.1 30.3-1.7 45.9-1.7s31 .6 45.9 1.7c8.5 12.6 16.6 25.5 24.3 38.7s14.9 26.7 21.7 40.4c-6.7 13.8-13.9 27.4-21.6 40.8-7.6 13.3-15.7 26.2-24.2 39-14.9 1.1-30.4 1.6-46.1 1.6s-30.9-.5-45.6-1.4c-8.7-12.7-16.9-25.7-24.6-39s-14.8-26.8-21.5-40.6zm180.6 51.2c5.1-8.8 9.9-17.7 14.6-26.7 6.4 14.5 12 29.2 16.9 44.3-15.5 3.5-31.2 6.2-47 8 5.4-8.4 10.5-17 15.5-25.6zm14.4-76.5c-4.7-8.8-9.5-17.6-14.5-26.2-4.9-8.5-10-16.9-15.3-25.2 16.1 2 31.5 4.7 45.9 8-4.6 14.8-10 29.2-16.1 43.4zM256.2 118.3c10.5 11.4 20.4 23.4 29.6 35.8-19.8-.9-39.7-.9-59.5 0 9.8-12.9 19.9-24.9 29.9-35.8zM140.2 57c16.8-9.8 54.1 4.2 93.4 39 2.5 2.2 5 4.6 7.6 7-15.5 16.7-29.8 34.5-42.9 53.1-22.6 2-45 5.5-67.2 10.4-1.3-5.1-2.4-10.3-3.5-15.5-9.4-48.4-3.2-84.9 12.6-94zm-24.5 263.6c-4.2-1.2-8.3-2.5-12.4-3.9-21.3-6.7-45.5-17.3-63-31.2-10.1-7-16.9-17.8-18.8-29.9 0-18.3 31.6-41.7 77.2-57.6 5.7-2 11.5-3.8 17.3-5.5 6.8 21.7 15 43 24.5 63.6-9.6 20.9-17.9 42.5-24.8 64.5zm116.6 98c-16.5 15.1-35.6 27.1-56.4 35.3-11.1 5.3-23.9 5.8-35.3 1.3-15.9-9.2-22.5-44.5-13.5-92 1.1-5.6 2.3-11.2 3.7-16.7 22.4 4.8 45 8.1 67.9 9.8 13.2 18.7 27.7 36.6 43.2 53.4-3.2 3.1-6.4 6.1-9.6 8.9zm24.5-24.3c-10.2-11-20.4-23.2-30.3-36.3 9.6.4 19.5.6 29.5.6 10.3 0 20.4-.2 30.4-.7-9.2 12.7-19.1 24.8-29.6 36.4zm130.7 30c-.9 12.2-6.9 23.6-16.5 31.3-15.9 9.2-49.8-2.8-86.4-34.2-4.2-3.6-8.4-7.5-12.7-11.5 15.3-16.9 29.4-34.8 42.2-53.6 22.9-1.9 45.7-5.4 68.2-10.5 1 4.1 1.9 8.2 2.7 12.2 4.9 21.6 5.7 44.1 2.5 66.3zm18.2-107.5c-2.8.9-5.6 1.8-8.5 2.6-7-21.8-15.6-43.1-25.5-63.8 9.6-20.4 17.7-41.4 24.5-62.9 5.2 1.5 10.2 3.1 15 4.7 46.6 16 79.3 39.8 79.3 58 0 19.6-34.9 44.9-84.8 61.4zm-149.7-15c25.3 0 45.8-20.5 45.8-45.8s-20.5-45.8-45.8-45.8c-25.3 0-45.8 20.5-45.8 45.8s20.5 45.8 45.8 45.8z",
+            ]);
+        </script>
+        <script>
+            self.__next_f.push([1, "c:T44e,"]);
+        </script>
+        <script>
+            self.__next_f.push([
+                1,
+                "M277.74 312.9c9.8-6.7 23.4-12.5 23.4-12.5s-38.7 7-77.2 10.2c-47.1 3.9-97.7 4.7-123.1 1.3-60.1-8 33-30.1 33-30.1s-36.1-2.4-80.6 19c-52.5 25.4 130 37 224.5 12.1zm-85.4-32.1c-19-42.7-83.1-80.2 0-145.8C296 53.2 242.84 0 242.84 0c21.5 84.5-75.6 110.1-110.7 162.6-23.9 35.9 11.7 74.4 60.2 118.2zm114.6-176.2c.1 0-175.2 43.8-91.5 140.2 24.7 28.4-6.5 54-6.5 54s62.7-32.4 33.9-72.9c-26.9-37.8-47.5-56.6 64.1-121.3zm-6.1 270.5a12.19 12.19 0 0 1-2 2.6c128.3-33.7 81.1-118.9 19.8-97.3a17.33 17.33 0 0 0-8.2 6.3 70.45 70.45 0 0 1 11-3c31-6.5 75.5 41.5-20.6 91.4zM348 437.4s14.5 11.9-15.9 21.2c-57.9 17.5-240.8 22.8-291.6.7-18.3-7.9 16-19 26.8-21.3 11.2-2.4 17.7-2 17.7-2-20.3-14.3-131.3 28.1-56.4 40.2C232.84 509.4 401 461.3 348 437.4zM124.44 396c-78.7 22 47.9 67.4 148.1 24.5a185.89 185.89 0 0 1-28.2-13.8c-44.7 8.5-65.4 9.1-106 4.5-33.5-3.8-13.9-15.2-13.9-15.2zm179.8 97.2c-78.7 14.8-175.8 13.1-233.3 3.6 0-.1 11.8 9.7 72.4 13.6 92.2 5.9 233.8-3.3 237.1-46.9 0 0-6.4 16.5-76.2 29.7zM260.64 353c-59.2 11.4-93.5 11.1-136.8 6.6-33.5-3.5-11.6-19.7-11.6-19.7-86.8 28.8 48.2 61.4 169.5 25.9a60.37 60.37 0 0 1-21.1-12.8z",
+            ]);
+        </script>
+        <script>
+            self.__next_f.push([1, "d:T13e3,"]);
+        </script>
+        <script>
+            self.__next_f.push([
+                1,
+                "M23.5594 14.7228a.5269.5269 0 0 0-.0563-.1191c-.139-.2632-.4768-.3418-1.0074-.2321-1.6533.3411-2.2935.1312-2.5256-.0191 1.342-2.0482 2.445-4.522 3.0411-6.8297.2714-1.0507.7982-3.5237.1222-4.7316a1.5641 1.5641 0 0 0-.1509-.235C21.6931.9086 19.8007.0248 17.5099.0005c-1.4947-.0158-2.7705.3461-3.1161.4794a9.449 9.449 0 0 0-.5159-.0816 8.044 8.044 0 0 0-1.3114-.1278c-1.1822-.0184-2.2038.2642-3.0498.8406-.8573-.3211-4.7888-1.645-7.2219.0788C.9359 2.1526.3086 3.8733.4302 6.3043c.0409.818.5069 3.334 1.2423 5.7436.4598 1.5065.9387 2.7019 1.4334 3.582.553.9942 1.1259 1.5933 1.7143 1.7895.4474.1491 1.1327.1441 1.8581-.7279.8012-.9635 1.5903-1.8258 1.9446-2.2069.4351.2355.9064.3625 1.39.3772a.0569.0569 0 0 0 .0004.0041 11.0312 11.0312 0 0 0-.2472.3054c-.3389.4302-.4094.5197-1.5002.7443-.3102.064-1.1344.2339-1.1464.8115-.0025.1224.0329.2309.0919.3268.2269.4231.9216.6097 1.015.6331 1.3345.3335 2.5044.092 3.3714-.6787-.017 2.231.0775 4.4174.3454 5.0874.2212.5529.7618 1.9045 2.4692 1.9043.2505 0 .5263-.0291.8296-.0941 1.7819-.3821 2.5557-1.1696 2.855-2.9059.1503-.8707.4016-2.8753.5388-4.1012.0169-.0703.0357-.1207.057-.1362.0007-.0005.0697-.0471.4272.0307a.3673.3673 0 0 0 .0443.0068l.2539.0223.0149.001c.8468.0384 1.9114-.1426 2.5312-.4308.6438-.2988 1.8057-1.0323 1.5951-1.6698zM2.371 11.8765c-.7435-2.4358-1.1779-4.8851-1.2123-5.5719-.1086-2.1714.4171-3.6829 1.5623-4.4927 1.8367-1.2986 4.8398-.5408 6.108-.13-.0032.0032-.0066.0061-.0098.0094-2.0238 2.044-1.9758 5.536-1.9708 5.7495-.0002.0823.0066.1989.0162.3593.0348.5873.0996 1.6804-.0735 2.9184-.1609 1.1504.1937 2.2764.9728 3.0892.0806.0841.1648.1631.2518.2374-.3468.3714-1.1004 1.1926-1.9025 2.1576-.5677.6825-.9597.5517-1.0886.5087-.3919-.1307-.813-.5871-1.2381-1.3223-.4796-.839-.9635-2.0317-1.4155-3.5126zm6.0072 5.0871c-.1711-.0428-.3271-.1132-.4322-.1772.0889-.0394.2374-.0902.4833-.1409 1.2833-.2641 1.4815-.4506 1.9143-1.0002.0992-.126.2116-.2687.3673-.4426a.3549.3549 0 0 0 .0737-.1298c.1708-.1513.2724-.1099.4369-.0417.156.0646.3078.26.3695.4752.0291.1016.0619.2945-.0452.4444-.9043 1.2658-2.2216 1.2494-3.1676 1.0128zm2.094-3.988-.0525.141c-.133.3566-.2567.6881-.3334 1.003-.6674-.0021-1.3168-.2872-1.8105-.8024-.6279-.6551-.9131-1.5664-.7825-2.5004.1828-1.3079.1153-2.4468.079-3.0586-.005-.0857-.0095-.1607-.0122-.2199.2957-.2621 1.6659-.9962 2.6429-.7724.4459.1022.7176.4057.8305.928.5846 2.7038.0774 3.8307-.3302 4.7363-.084.1866-.1633.3629-.2311.5454zm7.3637 4.5725c-.0169.1768-.0358.376-.0618.5959l-.146.4383a.3547.3547 0 0 0-.0182.1077c-.0059.4747-.054.6489-.115.8693-.0634.2292-.1353.4891-.1794 1.0575-.11 1.4143-.8782 2.2267-2.4172 2.5565-1.5155.3251-1.7843-.4968-2.0212-1.2217a6.5824 6.5824 0 0 0-.0769-.2266c-.2154-.5858-.1911-1.4119-.1574-2.5551.0165-.5612-.0249-1.9013-.3302-2.6462.0044-.2932.0106-.5909.019-.8918a.3529.3529 0 0 0-.0153-.1126 1.4927 1.4927 0 0 0-.0439-.208c-.1226-.4283-.4213-.7866-.7797-.9351-.1424-.059-.4038-.1672-.7178-.0869.067-.276.1831-.5875.309-.9249l.0529-.142c.0595-.16.134-.3257.213-.5012.4265-.9476 1.0106-2.2453.3766-5.1772-.2374-1.0981-1.0304-1.6343-2.2324-1.5098-.7207.0746-1.3799.3654-1.7088.5321a5.6716 5.6716 0 0 0-.1958.1041c.0918-1.1064.4386-3.1741 1.7357-4.4823a4.0306 4.0306 0 0 1 .3033-.276.3532.3532 0 0 0 .1447-.0644c.7524-.5706 1.6945-.8506 2.802-.8325.4091.0067.8017.0339 1.1742.081 1.939.3544 3.2439 1.4468 4.0359 2.3827.8143.9623 1.2552 1.9315 1.4312 2.4543-1.3232-.1346-2.2234.1268-2.6797.779-.9926 1.4189.543 4.1729 1.2811 5.4964.1353.2426.2522.4522.2889.5413.2403.5825.5515.9713.7787 1.2552.0696.087.1372.1714.1885.245-.4008.1155-1.1208.3825-1.0552 1.717-.0123.1563-.0423.4469-.0834.8148-.0461.2077-.0702.4603-.0994.7662zm.8905-1.6211c-.0405-.8316.2691-.9185.5967-1.0105a2.8566 2.8566 0 0 0 .135-.0406 1.202 1.202 0 0 0 .1342.103c.5703.3765 1.5823.4213 3.0068.1344-.2016.1769-.5189.3994-.9533.6011-.4098.1903-1.0957.333-1.7473.3636-.7197.0336-1.0859-.0807-1.1721-.151zm.5695-9.2712c-.0059.3508-.0542.6692-.1054 1.0017-.055.3576-.112.7274-.1264 1.1762-.0142.4368.0404.8909.0932 1.3301.1066.887.216 1.8003-.2075 2.7014a3.5272 3.5272 0 0 1-.1876-.3856c-.0527-.1276-.1669-.3326-.3251-.6162-.6156-1.1041-2.0574-3.6896-1.3193-4.7446.3795-.5427 1.3408-.5661 2.1781-.463zm.2284 7.0137a12.3762 12.3762 0 0 0-.0853-.1074l-.0355-.0444c.7262-1.1995.5842-2.3862.4578-3.4385-.0519-.4318-.1009-.8396-.0885-1.2226.0129-.4061.0666-.7543.1185-1.0911.0639-.415.1288-.8443.1109-1.3505.0134-.0531.0188-.1158.0118-.1902-.0457-.4855-.5999-1.938-1.7294-3.253-.6076-.7073-1.4896-1.4972-2.6889-2.0395.5251-.1066 1.2328-.2035 2.0244-.1859 2.0515.0456 3.6746.8135 4.8242 2.2824a.908.908 0 0 1 .0667.1002c.7231 1.3556-.2762 6.2751-2.9867 10.5405zm-8.8166-6.1162c-.025.1794-.3089.4225-.6211.4225a.5821.5821 0 0 1-.0809-.0056c-.1873-.026-.3765-.144-.5059-.3156-.0458-.0605-.1203-.178-.1055-.2844.0055-.0401.0261-.0985.0925-.1488.1182-.0894.3518-.1226.6096-.0867.3163.0441.6426.1938.6113.4186zm7.9305-.4114c.0111.0792-.049.201-.1531.3102-.0683.0717-.212.1961-.4079.2232a.5456.5456 0 0 1-.075.0052c-.2935 0-.5414-.2344-.5607-.3717-.024-.1765.2641-.3106.5611-.352.297-.0414.6111.0088.6356.1851z",
+            ]);
+        </script>
+        <script>
+            self.__next_f.push([
+                1,
+                '16:{"fontFamily":"system-ui,\\"Segoe UI\\",Roboto,Helvetica,Arial,sans-serif,\\"Apple Color Emoji\\",\\"Segoe UI Emoji\\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"}\n17:{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"}\n18:{"display":"inline-block"}\n19:{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0}\n1d:[]\n',
+            ]);
+        </script>
+        <script>
+            self.__next_f.push([
+                1,
+                '3:[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/styles.css","precedence":"next","crossOrigin":""}]],["$","$L4",null,{"buildId":"GmyYWxzE12TjG-JTr-R_l","assetPrefix":"","initialCanonicalUrl":"/","initialTree":["",{"children":["(home)",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],"initialSeedData":["",{"children":["(home)",{"children":["__PAGE__",{},["$L5",["$","main",null,{"children":[["$","$L6",null,{}],["$","$L7",null,{}],["$","div",null,{"className":"mx-auto max-w-5xl px-8 pb-8","children":[["$","h1",null,{"id":"skills","className":"max-w-5xl pt-20 text-2xl font-bold dark:text-white md:pt-32 md:text-7xl","children":"Skills"}],["$","div",null,{"className":"grid grid-cols-1 gap-6  py-10 md:grid-cols-2 lg:grid-cols-3","children":[["$","$L8","0",{"href":"https://react.dev/","className":"relative mx-auto flex h-[13rem] w-full max-w-full flex-col items-start border border-black/[0.2] p-4 dark:border-white/[0.2]","children":[["$","$L9",null,{"className":"absolute -left-3 -top-3 size-6 text-black dark:text-white"}],["$","$L9",null,{"className":"absolute -bottom-3 -left-3 size-6 text-black dark:text-white"}],["$","$L9",null,{"className":"absolute -right-3 -top-3 size-6 text-black dark:text-white"}],["$","$L9",null,{"className":"absolute -bottom-3 -right-3 size-6 text-black dark:text-white"}],["$","$La",null,{"text":"React.js","icon":["$","svg",null,{"stroke":"currentColor","fill":"currentColor","strokeWidth":"0","viewBox":"0 0 512 512","children":["$undefined",[["$","path","0",{"d":"$b","children":[]}]]],"className":"$undefined","style":{"color":"$undefined"},"height":"1em","width":"1em","xmlns":"http://www.w3.org/2000/svg"}]}]]}],["$","$L8","1",{"href":"https://nextjs.org","className":"relative mx-auto flex h-[13rem] w-full max-w-full flex-col items-start border border-black/[0.2] p-4 dark:border-white/[0.2]","children":[["$","$L9",null,{"className":"absolute -left-3 -top-3 size-6 text-black dark:text-white"}],["$","$L9",null,{"className":"absolute -bottom-3 -left-3 size-6 text-black dark:text-white"}],["$","$L9",null,{"className":"absolute -right-3 -top-3 size-6 text-black dark:text-white"}],["$","$L9",null,{"className":"absolute -bottom-3 -right-3 size-6 text-black dark:text-white"}],["$","$La",null,{"text":"Next.js","icon":["$","svg",null,{"stroke":"currentColor","fill":"none","strokeWidth":"2","viewBox":"0 0 24 24","strokeLinecap":"round","strokeLinejoin":"round","children":["$undefined",[["$","path","0",{"stroke":"none","d":"M0 0h24v24H0z","fill":"none","children":[]}],["$","path","1",{"d":"M9 15v-6l7.745 10.65a9 9 0 1 1 2.255 -1.993","children":[]}],["$","path","2",{"d":"M15 12v-3","children":[]}]]],"className":"$undefined","style":{"color":"$undefined"},"height":"1em","width":"1em","xmlns":"http://www.w3.org/2000/svg"}]}]]}],["$","$L8","2",{"href":"https://tailwindcss.com","className":"relative mx-auto flex h-[13rem] w-full max-w-full flex-col items-start border border-black/[0.2] p-4 dark:border-white/[0.2]","children":[["$","$L9",null,{"className":"absolute -left-3 -top-3 size-6 text-black dark:text-white"}],["$","$L9",null,{"className":"absolute -bottom-3 -left-3 size-6 text-black dark:text-white"}],["$","$L9",null,{"className":"absolute -right-3 -top-3 size-6 text-black dark:text-white"}],["$","$L9",null,{"className":"absolute -bottom-3 -right-3 size-6 text-black dark:text-white"}],["$","$La",null,{"text":"Tailwind","icon":["$","svg",null,{"stroke":"currentColor","fill":"currentColor","strokeWidth":"0","role":"img","viewBox":"0 0 24 24","children":["$undefined",[["$","path","0",{"d":"M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z","children":[]}]]],"className":"$undefined","style":{"color":"$undefined"},"height":"1em","width":"1em","xmlns":"http://www.w3.org/2000/svg"}]}]]}],["$","$L8","3",{"href":"https://www.oracle.com/java/","className":"relative mx-auto flex h-[13rem] w-full max-w-full flex-col items-start border border-black/[0.2] p-4 dark:border-white/[0.2]","children":[["$","$L9",null,{"className":"absolute -left-3 -top-3 size-6 text-black dark:text-white"}],["$","$L9",null,{"className":"absolute -bottom-3 -left-3 size-6 text-black dark:text-white"}],["$","$L9",null,{"className":"absolute -right-3 -top-3 size-6 text-black dark:text-white"}],["$","$L9",null,{"className":"absolute -bottom-3 -right-3 size-6 text-black dark:text-white"}],["$","$La",null,{"text":"Java","icon":["$","svg",null,{"stroke":"currentColor","fill":"currentColor","strokeWidth":"0","viewBox":"0 0 384 512","children":["$undefined",[["$","path","0",{"d":"$c","children":[]}]]],"className":"$undefined","style":{"color":"$undefined"},"height":"1em","width":"1em","xmlns":"http://www.w3.org/2000/svg"}]}]]}],["$","$L8","4",{"href":"https://spring.io/projects/spring-boot","className":"relative mx-auto flex h-[13rem] w-full max-w-full flex-col items-start border border-black/[0.2] p-4 dark:border-white/[0.2]","children":[["$","$L9",null,{"className":"absolute -left-3 -top-3 size-6 text-black dark:text-white"}],["$","$L9",null,{"className":"absolute -bottom-3 -left-3 size-6 text-black dark:text-white"}],["$","$L9",null,{"className":"absolute -right-3 -top-3 size-6 text-black dark:text-white"}],["$","$L9",null,{"className":"absolute -bottom-3 -right-3 size-6 text-black dark:text-white"}],["$","$La",null,{"text":"Spring Boot","icon":["$","svg",null,{"stroke":"currentColor","fill":"currentColor","strokeWidth":"0","role":"img","viewBox":"0 0 24 24","children":["$undefined",[["$","path","0",{"d":"m23.693 10.7058-4.73-8.1844c-.4094-.7106-1.4166-1.2942-2.2402-1.2942H7.2725c-.819 0-1.8308.5836-2.2402 1.2942L.307 10.7058c-.4095.7106-.4095 1.873 0 2.5837l4.7252 8.189c.4094.7107 1.4166 1.2943 2.2402 1.2943h9.455c.819 0 1.826-.5836 2.2402-1.2942l4.7252-8.189c.4095-.7107.4095-1.8732 0-2.5838zM10.9763 5.7547c0-.5365.4377-.9742.9742-.9742s.9742.4377.9742.9742v5.8217c0 .5366-.4377.9742-.9742.9742s-.9742-.4376-.9742-.9742zm.9742 12.4294c-3.6427 0-6.6077-2.965-6.6077-6.6077.0047-2.0896.993-4.0521 2.6685-5.304a.8657.8657 0 0 1 1.2142.1788.8657.8657 0 0 1-.1788 1.2143c-2.1602 1.6048-2.612 4.6592-1.0072 6.8194 1.6049 2.1603 4.6593 2.612 6.8195 1.0072 1.2378-.9177 1.9673-2.372 1.9673-3.9157a4.8972 4.8972 0 0 0-1.9861-3.925c-.386-.2824-.466-.8284-.1836-1.2143.2824-.386.8283-.466 1.2143-.1835 1.6895 1.2471 2.6826 3.2238 2.6873 5.3228 0 3.6474-2.965 6.6077-6.6077 6.6077z","children":[]}]]],"className":"$undefined","style":{"color":"$undefined"},"height":"1em","width":"1em","xmlns":"http://www.w3.org/2000/svg"}]}]]}],["$","$L8","5",{"href":"https://www.postgresql.org","className":"relative mx-auto flex h-[13rem] w-full max-w-full flex-col items-start border border-black/[0.2] p-4 dark:border-white/[0.2]","children":[["$","$L9",null,{"className":"absolute -left-3 -top-3 size-6 text-black dark:text-white"}],["$","$L9",null,{"className":"absolute -bottom-3 -left-3 size-6 text-black dark:text-white"}],["$","$L9",null,{"className":"absolute -right-3 -top-3 size-6 text-black dark:text-white"}],["$","$L9",null,{"className":"absolute -bottom-3 -right-3 size-6 text-black dark:text-white"}],["$","$La",null,{"text":"PostgreSQL","icon":["$","svg",null,{"stroke":"currentColor","fill":"currentColor","strokeWidth":"0","role":"img","viewBox":"0 0 24 24","children":["$undefined",[["$","path","0",{"d":"$d","children":[]}]]],"className":"$undefined","style":{"color":"$undefined"},"height":"1em","width":"1em","xmlns":"http://www.w3.org/2000/svg"}]}]]}]]}]]}],["$","$Le",null,{"products":[{"title":"Mern Memories","link":"https://github.com/spojskic/mern-memories","thumbnail":"/projects/mern-memories.png"},{"title":"Next Event","link":"https://github.com/spojskic/next-dj-events-frontend","thumbnail":"/projects/next-event.png"},{"title":"Devspace","link":"https://github.com/spojskic/next-devspace-blog","thumbnail":"/projects/devspace.png"},{"title":"Google Clone","link":"https://github.com/MagicPojska/gulululgl-search-clone","thumbnail":"/projects/google-clone.png"},{"title":"Portfolio V1","link":"https://safetpojskic.netlify.app/","thumbnail":"/projects/old-portfolio.png"},{"title":"Dresscode","link":"","thumbnail":"/projects/dresscode.png"},{"title":"Portfolio V2","link":"https://safetpojskic.com","thumbnail":"/projects/portfoliov2.png"},{"title":"Music App","link":"https://github.com/spojskic/my-music-app","thumbnail":"/projects/music-app.png"},{"title":"Artemis","link":"","thumbnail":"/projects/artemis.png"}]}],["$","$Lf",null,{}]]}],null]]},[null,["$","div",null,{"className":"dark:bg-black","children":[["$","$L10",null,{}],["$","$L11",null,{"parallelRouterKey":"children","segmentPath":["children","(home)","children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L12",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\\"Segoe UI\\",Roboto,Helvetica,Arial,sans-serif,\\"Apple Color Emoji\\",\\"Segoe UI Emoji\\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}]]}],null]]},[null,["$","html",null,{"lang":"en","children":["$","body",null,{"className":"__className_587f35","children":[["$","$L13",null,{}],["$","$L14",null,{}],["$","$L15",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"children":[["$","$L11",null,{"parallelRouterKey":"children","segmentPath":["children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L12",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":"$16","children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":"$17","children":"404"}],["$","div",null,{"style":"$18","children":["$","h2",null,{"style":"$19","children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}],["$","$L1a",null,{}]]}]]}]}],null]],"initialHead":[false,"$L1b"],"globalErrorComponent":"$1c","missingSlots":"$W1d"}]]\n',
+            ]);
+        </script>
+        <script>
+            self.__next_f.push([
+                1,
+                '1b:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Safet Pojskic"}],["$","meta","3",{"name":"description","content":"Welcome to my personal portfolio!"}],["$","meta","4",{"name":"application-name","content":"Safet Pojskic"}],["$","meta","5",{"name":"keywords","content":"Safet Pojskic,portfolio,personal,website,developer,designer,engineer,software,engineer"}],["$","meta","6",{"property":"og:title","content":"Safet Pojskic"}],["$","meta","7",{"property":"og:description","content":"Welcome to my personal portfolio!"}],["$","meta","8",{"property":"og:site_name","content":"Safet Pojskic"}],["$","meta","9",{"property":"og:image","content":"https://safetpojskic.com/opengraph-image.png"}],["$","meta","10",{"property":"og:type","content":"website"}],["$","meta","11",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","12",{"name":"twitter:site","content":"@safetpojskic"}],["$","meta","13",{"name":"twitter:title","content":"Safet Pojskic"}],["$","meta","14",{"name":"twitter:description","content":"Welcome to my personal portfolio!"}],["$","meta","15",{"name":"twitter:image","content":"https://safetpojskic.com/opengraph-image.png"}],["$","link","16",{"rel":"icon","href":"/favicon/android-chrome-192x192.png","type":"image/png","sizes":"192x192"}],["$","link","17",{"rel":"icon","href":"/favicon/android-chrome-512x512.png","type":"image/png","sizes":"512x512"}],["$","link","18",{"rel":"apple-touch-icon","href":"/favicon/apple-touch-icon.png"}],["$","link","19",{"rel":"icon","href":"/favicon/favicon.ico","type":"image/x-icon"}],["$","link","20",{"rel":"icon","href":"/favicon/favicon-16x16.png","type":"image/png","sizes":"16x16"}],["$","link","21",{"rel":"icon","href":"/favicon/favicon-32x32.png","type":"image/png","sizes":"32x32"}],["$","meta","22",{"name":"next-size-adjust"}]]\n',
+            ]);
+        </script>
+        <script>
+            self.__next_f.push([1, "5:null\n"]);
+        </script>
+        <script>
+            self.__next_f.push([1, ""]);
+        </script>
+      <next-route-announcer style="position: absolute;">
+         <template shadowrootmode="open">
+            <div aria-live="assertive" id="__next-route-announcer__" role="alert" style="position: absolute; border: 0px; height: 1px; margin: -1px; padding: 0px; width: 1px; clip: rect(0px, 0px, 0px, 0px); overflow: hidden; white-space: nowrap; overflow-wrap: normal;"></div>
+         </template>
+      </next-route-announcer>
+   </body>
 </html>
